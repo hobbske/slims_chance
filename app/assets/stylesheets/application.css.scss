@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ @import "bootstrap-united";
+
+img.brand {
+	height: 90%;
+	padding: auto;
+}
+
+.jumbotron { 
+  background-image: url(cover_photo_xl.jpg);
+  background-size: 100% 100%;
+  height: 650px;
+  
+}
