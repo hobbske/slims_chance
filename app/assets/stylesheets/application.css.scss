@@ -15,14 +15,153 @@
  */
  @import "bootstrap-united";
 
+
+
+body {
+	background-color: rgba(178,178,178,.5);
+  font-size: 22px;
+}
+
+
 img.brand {
-	height: 90%;
-	padding: auto;
+	height: 100%;
+	margin: auto;
+}
+
+a.brand {
+	color: #581c08;
+	margin-right: 20px;
 }
 
 .jumbotron { 
-  background-image: url(cover_photo_xl.jpg);
   background-size: 100% 100%;
-  height: 650px;
+  border-radius: 15px;
+  padding: 5px;
   
 }
+
+.background-header {
+  background: rgba(255,255,255,.7);
+  border-radius: 15px;
+}
+
+.brand {
+	margin: auto;
+}
+
+.brand-text {
+	color: #DD4814;
+	letter-spacing: 2px;
+}
+
+.default-text {
+  color: black;
+}
+
+.white-text {
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+
+
+/* Default - screens over 767px wide */
+.logo {
+  /* ... */
+  width: auto;
+  height: 260px;
+}
+
+.background {
+  /* ... */
+  width: 1400px;
+  height: 680px;
+}
+img.image {
+	/* ... */
+  width: 1400px;
+  height: 680px;
+  margin: auto;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+
+
+/* Mobile Landscape */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .logo {
+    /* ... */
+    width: auto;
+    height: 90px;
+  }
+
+  .background {
+    /* ... */
+    width: 400px;
+    height: 330px;
+  }
+
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+  }
+
+  img.image {
+    /* ... */
+    width: 700px;
+    height: 290px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}
+
+/* Mobile portrait */
+@media only screen and (max-width: 479px) {
+  .logo {
+    /* ... */
+    width: auto;
+    height: 120px;
+  }
+
+  .background {
+    /* ... */
+    width: 400px;
+    height: 535px;
+  }
+
+  img.image {
+    /* ... */
+    width: 370px;
+    height: 535px;
+    margin: auto;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+

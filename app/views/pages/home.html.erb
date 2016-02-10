@@ -1,14 +1,118 @@
 
-	<div class="jumbotron img-responsive text-center">
-	  <h1>Slim's Chance Foundation</h1>
-	  <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-	  <div>
-	  	<%= image_tag 'logo.png', :class => "brand" %>
-	  </div>
+<!-- Carousel -->
+<div id="carousel-example-generic" class="carousel slide jumbotron" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
 
-	  <br>
-	  
-		<div>
-	  	<p><a class="btn btn-primary btn-lg">Learn more</a></p>
-	  </div>
-	</div>	
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="background">
+		  	<%= image_tag 'cover_photo_xl.jpg', :alternate => "Slide 1", :class => "image" %>
+		  </div>
+      <div class="carousel-caption">
+  			<div>
+					<div class="brand-text background-header">
+				  	<h2>Slim's Chance Foundation</h2>
+				  </div>
+					<div class="default-text">
+				  	<h3>Created to help children, when they lose a parent due to a traumatic illness or sudden death.</h3>
+					</div>
+				  <div class="logo">
+				  	<%= image_tag 'logo.png', :align => "center", :class => "brand text-center" %>
+				  </div>
+
+					<h4 class="white-text">The desire to <u><strong class="brand-text">S</strong>top <strong class="brand-text">L</strong>etting <strong class="brand-text">I</strong>nnocence <strong class="brand-text">M</strong>iss(out)</u> drives everything we do.</h4>
+
+				  <br>
+				  
+					<div>
+				  	<p><a class="btn btn-primary btn-lg">Learn more</a></p>
+				  </div>
+				</div>
+
+      </div>
+    </div>
+    <div class="item">
+      <div class="background">
+		  	<%= image_tag 'baseball_camp_team.jpg', :alternate => "Slide 2", :class => "image" %>
+		  </div>
+      <div class="carousel-caption">
+  			<div>
+					<div class="brand-text background-header">
+				  	<h2>SCF Baseball Camp</h2>
+				  </div>
+
+				  <h4>Placeholder - Top</h4>
+
+				  <br>
+				  
+					<div>
+				  	<p><a class="btn btn-primary btn-lg">Learn more</a></p>
+				  </div>
+				</div>
+
+      </div>
+    </div>
+    <div class="item">
+      <div class="background">
+		  	<%= image_tag 'valentines_day_1.jpg', :alternate => "Slide 3", :class => "image" %>
+		  </div>
+      <div class="carousel-caption">
+  			<div>
+					<div class="brand-text background-header">
+				  	<h2>Valentine's Day Dinner Benefit</h2>
+				  </div>
+
+				  <h4>Placeholder - Top</h4>
+
+				  <br>
+				  
+					<div>
+				  	<p><a class="btn btn-primary btn-lg">Learn more</a></p>
+				  </div>
+				</div>
+
+      </div>    
+    </div>
+    <div class="item">
+      <div class="background">
+		  	<%= image_tag 'cover_photo_kid_bw.jpg', :alternate => "Slide 4", :class => "image" %>
+		  </div>
+      <div class="carousel-caption">
+  			<div>
+					<div class="brand-text background-header">
+				  	<h2>Slim's Chance Foundatiion</h2>
+				  </div>
+
+				  <h3>Making lives better, one child at a time.</h3>
+
+				  <br>
+				  
+					<div>
+				  	<p><a class="btn btn-primary btn-lg">Learn more</a></p>
+				  </div>
+				</div>
+
+      </div>    
+    </div>
+
+
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
