@@ -20,14 +20,24 @@
 	      </button>
 
 	      <%= link_to root_path, class: 'brand' do %>
-          <%= image_tag 'logo_sm.png', align: 'center', :class => "brand" %> Slim's Chance
+          <%= image_tag 'logo_sm_no_name.png', align: 'center', :class => "brand" %> Slim's Chance
         <% end %>
 	    </div>
 
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">About Us</a></li>
+	        <li class="<%= active_class(root_path) %>"><%= link_to "Home", root_path %></li>
+          <li class="<%= active_class(contact_path) %>"><%= link_to "Contact Us", contact_path %></li>
+
+					<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu">
+	            <li class="<%= active_class(about_path) %>"><%= link_to "Our Mission", about_path %></li>
+	            <li class="<%= active_class(slim_path) %>"><%= link_to "About Slim", slim_path %></li>
+	          </ul>
+	        </li>
+
+
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">

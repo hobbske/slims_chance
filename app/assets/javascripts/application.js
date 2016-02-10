@@ -16,3 +16,13 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
+
+$(document).ready(function(){
+  
+  var selector = '.nav li';
+
+  $(selector).on('click', function(){
+      $(selector).removeClass('active');
+      $(this).addClass('active');
+  });
+});
