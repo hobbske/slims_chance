@@ -29,7 +29,7 @@
 	      <ul class="nav navbar-nav navbar-tabs">
 	        <li class="<%= active_class(root_path) %>"><%= link_to "Home", root_path %></li>
           <li class="<%= active_class(contact_path) %>"><%= link_to "Contact Us", contact_path %></li>
-
+			
 					<li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">
@@ -42,13 +42,13 @@
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">
+							<li class="<%= active_class(events_path) %>"><%= link_to "All Events", events_path %></li>
+	            	<li class="divider"></li>
 	            <li><a href="#">Baseball Camp</a></li>
+	            	<li class="divider"></li>
 	            <li><a href="#">Valentine's Day Dinner</a></li>
-	            <li><a href="#">5k Road Race</a></li>
-	            <li class="divider"></li>
-	            <li><a href="#">Another Event</a></li>
-	            <li class="divider"></li>
-	            <li><a href="#">Another Event</a></li>
+	            	<li class="divider"></li>
+	            <li><a href="#">Other Events</a></li>
 	          </ul>
 	        </li>
 
