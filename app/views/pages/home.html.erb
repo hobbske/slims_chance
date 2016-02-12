@@ -5,11 +5,13 @@
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <!-- <li data-target="#carousel-example-generic" data-slide-to="3"></li> -->
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
+    
+
     <div class="item active">
       <div class="background">
 		  	<%= image_tag 'cover_photo_lg.jpg', :alternate => "Slide 1", :class => "image" %>
@@ -29,9 +31,9 @@
 				  <br>
 
 					<div class="item text-center">
-						<h3 class="default-textx" align="center"><strong class="brand-text">S</strong>top <strong class="brand-text">L</strong>etting <strong class="brand-text">I</strong>nnocence <strong class="brand-text">M</strong>is<strong class="brand-text">S</strong> (out)!</h3> 
+						<h3 class="default-textx" align="center"><strong class="brand-text-lt">S</strong>top <strong class="brand-text-lt">L</strong>etting <strong class="brand-text-lt">I</strong>nnocence <strong class="brand-text-lt">M</strong>is<strong class="brand-text-lt">S</strong> (out)!</h3> 
 					</div>
-				  <br>
+				 
 				  
 					<div>
 				  	<p><%= button_to "Learn More", about_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
@@ -40,18 +42,21 @@
 
       </div>
     </div>
+
+
     <div class="item">
       <div class="background">
 		  	<%= image_tag 'baseball_camp_team.jpg', :alternate => "Slide 2", :class => "image" %>
 		  </div>
       <div class="carousel-caption">
-  			<div>
-					<div class="brand-text background-header">
-				  	<h2>SCF Baseball Camp</h2>
-				  </div>
-
-				  <h4>Placeholder - Top</h4>
-
+  			<div class="bottom" style="width: 50%; margin: 0 auto;">
+					<div class=" row brand-text-lt background-header" style="padding: 1% 0%">
+				  	<h2 id="slide-title">SC Baseball Camp</h2>
+				 		<div class="default-textx">
+					  	<h4>New Session Registration</h4> 
+					  	<h4>July 20th</h4>
+					  </div>
+					</div>
 				  <br>
 				  
 					<div>
@@ -61,13 +66,15 @@
 
       </div>
     </div>
-    <div class="item">
+
+
+    <!-- <div class="item">
       <div class="background">
 		  	<%= image_tag 'valentines_day_1.jpg', :alternate => "Slide 3", :class => "image" %>
 		  </div>
       <div class="carousel-caption">
   			<div>
-					<div class="brand-text background-header">
+					<div class="brand-text-lt background-header">
 				  	<h2>Valentine's Day Dinner Benefit</h2>
 				  </div>
 
@@ -81,19 +88,21 @@
 				</div>
 
       </div>    
-    </div>
+    </div> -->
+
+
     <div class="item">
       <div class="background">
 		  	<%= image_tag 'cover_photo_kid_bw.jpg', :alternate => "Slide 4", :class => "image" %>
 		  </div>
       <div class="carousel-caption">
-  			<div>
-					<div class="brand-text background-header">
-				  	<h2>Slim's Chance Foundatiion</h2>
+  			<div class="bottom">
+					<div class="brand-text-lt background-header">
+				  	<h2 id="slide-title">Slim's Chance Foundation</h2>
 				  </div>
-
-				  <h3>Making lives better, one child at a time.</h3>
-
+					<div>
+				  	<h3>Making lives better, one kid at a time.</h3>
+					</div>
 				  <br>
 				  
 					<div>
