@@ -17,6 +17,14 @@
 //= require_tree .
 //= require bootstrap
 
+// Remove flash notices after 5 seconds
+$(document).ready(function(){
+  setTimeout(function(){
+    $('#flash').remove();
+  }, 5000);
+});
+
+// make parent class active with child in navbar dropdowns
 $(document).ready(function(){
   
   var selector = '.nav li';
@@ -26,3 +34,11 @@ $(document).ready(function(){
       $(this).addClass('active');
   });
 });
+
+// Automatically start carousel and change slides every 2 seconds
+$(document).ready(function() {
+	$('.carousel').carousel({
+	   interval: 2000
+	})
+}); 
+

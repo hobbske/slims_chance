@@ -18,7 +18,7 @@
 
 
 body {
-	background-color: rgba(178,178,178,.5);
+	background-color: none;
   font-size: 18px;
 }
 
@@ -64,6 +64,13 @@ a.brand {
   color: black;
 }
 
+.row-fluid {
+    word-wrap: break-word;
+}
+
+.no-background {
+  background: rgba(255,255,255,.7);
+}
 
 .white-text {
 	color: #fff;
