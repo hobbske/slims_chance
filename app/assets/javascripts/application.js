@@ -38,7 +38,7 @@ $(document).ready(function(){
 // Automatically start carousel and change slides every 2 seconds
 $(document).ready(function() {
 	$('.carousel').carousel({
-	   interval: 2000
+	   interval: 8000
 	})
 }); 
 
