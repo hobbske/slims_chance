@@ -1,69 +1,83 @@
-<p id="notice"><%= notice %></p>
-  
-<div class="container">
-  <ol class="breadcrumb text-left">
-    <li><%= link_to "Home", root_path %></li>
-    <li><a href="#">Events</a></li>
-    <li class="active">All Events</li>
-  </ol>
+<div class="col-md-12">  
+  <div class="container">
+    <ol class="breadcrumb text-left">
+      <li><%= link_to "Home", root_path %></li>
+      <li><a href="#">Events</a></li>
+      <li class="active">All Events</li>
+    </ol>
+  </div>
 </div>
 
-  <div class="jumbotron-title">
-    <h2 class="base-text text-center">SC Events</h2>
-  </div>
-  <div class="jumbo-table">
-    <table class="table table-bordered table-hover">
-      <thead>
-        <tr>
-          <th class="text-center thead-brand">Event</th>
-          <th class="text-center thead-brand">Description</th>
-          <th class="text-center thead-brand">Cost</th>
-          <th class="text-center thead-brand">Begins</th>
-          <th class="text-center thead-brand">Ends</th>
-          <!-- <th class="text-center thead-brand">Start</th>
-          <th class="text-center thead-brand">Finish</th> -->
-          
-          <th colspan="3"></th>
-        </tr>
-      </thead>
-
-      <tbody class="text-center row-fluid">
-        <% @events.each do |event| %>
+<div class="col-md-12">
+  <div class="container-fluid">
+    <div class="jumbotron-title">
+      <h2 class="base-text text-center">SC Events</h2>
+    </div>
+    <div class="jumbo-table">
+      <table class="table table-bordered table-hover">
+        <thead>
           <tr>
-            <td><%= event.event_name %></td>
-            <td><%= event.event_desc %></td>
-            <td><%= event.cost %></td>
-            <td><%= event.start_date.to_s(:short) %></td>
-            <td><%= event.end_date.to_s(:short) %></td>
-            <!-- <td><%= event.start_time.to_s(:short) %></td>
-            <td><%= event.end_time.to_s(:short) %></td> -->
-
+            <th class="text-center thead-brand">Event</th>
+            <th class="text-center thead-brand">Description</th>
+            <th class="text-center thead-brand">Cost</th>
+            <th class="text-center thead-brand">Begins</th>
+            <th class="text-center thead-brand">Ends</th>
+            <!-- <th class="text-center thead-brand">Start</th>
+            <th class="text-center thead-brand">Finish</th> -->
             
-            <td class="no-background">
-              <%= link_to event do %>
-                <i class="glyphicon glyphicon-zoom-in no-background"></i>
-              <% end %>
-            </td>
-
-            
-            <td>
-              <%= link_to edit_event_path(event) do %>
-                <i class="glyphicon glyphicon-pencil"></i>
-              <% end %>
-            </td>
-
-            <td>
-              <%= link_to edit_event_path(event), method: :delete do %>
-                <i class="glyphicon glyphicon-trash"></i>
-              <% end %>
-            </td>
+            <th colspan="3" class="text-center thead-brand"> Admin</th>
           </tr>
-        <% end %>
-      </tbody>
-    </table>
+        </thead>
 
-  <br>
+        <tbody class="text-center row-fluid">
+          <% @events.each do |event| %>
+            <tr>
+              <td><%= event.event_name %></td>
+              <td><%= event.event_desc %></td>
+              <td><%= event.cost %></td>
+              <td><%= event.start_date.to_s(:short) %></td>
+              <td><%= event.end_date.to_s(:short) %></td>
+              <!-- <td><%= event.start_time.to_s(:short) %></td>
+              <td><%= event.end_time.to_s(:short) %></td> -->
 
-  <%= link_to 'New Event', new_event_path %>
+              
+              <td style="border-style: none;">
+                <%= link_to event do %>
+                  <i class="glyphicon glyphicon-info-sign"></i>
+                <% end %>
+              </td>
 
+              
+              <td style="border-style: none;">
+                <%= link_to edit_event_path(event) do %>
+                  <i class="glyphicon glyphicon-pencil"></i>
+                <% end %>
+              </td>
+
+              <td style="border-style: none;">
+                <%= link_to event_path(event), method: :delete, data: { confirm: 'Are you sure you want to delete this event?' } do %>
+                  <i class="glyphicon glyphicon-trash"></i>
+                <% end %>
+              </td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+      
+      <div class="col-md-12">
+        <div class="row" style="float: left; letter-spacing: 0;">
+
+          <%= link_to :back, class: 'btn btn-lg btn-danger' do %>
+            <i class="glyphicon glyphicon-hand-left"> Back</i>
+          <% end %>
+            
+          <%= link_to new_event_path, class: 'btn btn-lg btn-danger' do %>
+            <i class="glyphicon glyphicon-plus-sign"> Event</i>
+          <% end %>
+
+        </div>
+      </div>
+
+    </div>
   </div>
+</div>

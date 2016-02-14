@@ -1,3 +1,5 @@
+
+
 <%= form_for(@event) do |f| %>
   <% if @event.errors.any? %>
     <div id="error_explanation">
@@ -11,50 +13,58 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :start_date %><br>
-    <%= f.date_select :start_date %>
-  </div>
-  <div class="field">
-    <%= f.label :end_date %><br>
-    <%= f.date_select :end_date %>
-  </div>
-  <div class="field">
-    <%= f.label :start_time %><br>
-    <%= f.time_select :start_time %>
-  </div>
-  <div class="field">
-    <%= f.label :end_time %><br>
-    <%= f.time_select :end_time %>
-  </div>
-  <div class="field">
-    <%= f.label :event_name %><br>
-    <%= f.text_field :event_name %>
-  </div>
-  <div class="field">
-    <%= f.label :event_desc %><br>
-    <%= f.text_area :event_desc %>
-  </div>
-  <div class="field">
-    <%= f.label :cost %><br>
-    <%= f.text_field :cost %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+  
+  
 
-<div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
+  <div class="row">
+    <div class="form-group text-left">
+      <%= f.label :event_name %><br>
+      <%= f.text_field :event_name, class: 'form-control' %>
     </div>
-</div>
+  </div>
+
+  <div class="row">
+    <div class="form-group text-left">
+      <%= f.label :event_desc %><br>
+      <%= f.text_field :event_desc, class: 'form-control' %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group text-left">
+      <%= f.label :start_date %><br>
+      <%= f.date_select :start_date %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group text-left">
+      <%= f.label :end_date %><br>
+      <%= f.date_select :end_date %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group text-left">
+      <%= f.label :start_time %><br>
+      <%= f.time_select :start_time %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group text-left">
+      <%= f.label :end_time %><br>
+      <%= f.time_select :end_time %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group text-left">
+      <%= f.label :cost %><br>
+      <%= f.time_select :cost %>
+    </div> 
+  </div>
+
+<%= f.submit "Submit Event", class: 'btn btn-lg btn-danger'%>
+
+<% end %>

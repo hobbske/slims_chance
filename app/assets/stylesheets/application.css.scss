@@ -65,6 +65,7 @@ a.brand {
 .table-hover tr:hover td,.table-hover tr:hover {
 
  color:#DD4814;
+ background-color: rgba(221,72,20,.3);
 }
 
 .brand-text {
@@ -80,7 +81,7 @@ a.brand {
 
 .breadcrumb {
   background: rgba(255,255,255,0);
-  font-size: 2.0 vmax;
+  font-size: 1.8 vmax;
   padding: 0px 5px;
   margin: 0% 1%;
 }
@@ -91,11 +92,15 @@ a.brand {
   padding: 0;
 }
 
-.title-text {
-  color: #581c08;
-  margin-bottom: 0;
-
+.form-outline {
+  background: rgba(255,255,255,.5);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(221,72,20,1);
+  padding: 5%;
+  padding-top: 1%;
 }
+
 
 .default-text {
   color: #191919;
@@ -107,6 +112,12 @@ a.brand {
   letter-spacing: 2px;
   margin-top: 4%;
 }
+
+.field-group {
+  display: inline-block;
+}
+
+  
 
 .jumbotron { 
   background-size: 100% 100%;
@@ -125,7 +136,7 @@ a.brand {
 
 .jumbo-table {
     padding: 0px;   
-    margin: 0% 1%;
+    margin: 0% 0%;
     color: inherit;
     background-color: #eeeeee;
 }
@@ -142,7 +153,8 @@ a.brand {
 }
 
 .no-background {
-  background: rgba(255,255,255,.7);
+  background: none;
+  border: none;
 }
 
 .row-fluid {
@@ -154,6 +166,12 @@ a.brand {
   background-size: 100% 100%;
 
   color: rgba(255,255,255,1);
+}
+
+.title-text {
+  color: #581c08;
+  margin-bottom: 0;
+
 }
 
 .white-text {
