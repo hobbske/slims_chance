@@ -16,6 +16,8 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap
+//= require moment
+//= require bootstrap-datetimepicker
 
 // Remove flash notices after 5 seconds
 $(document).ready(function(){
@@ -38,7 +40,18 @@ $(document).ready(function(){
 // Automatically start carousel and change slides every 2 seconds
 $(document).ready(function() {
 	$('.carousel').carousel({
-	   interval: 8000000
+	   interval: 8000
 	})
 }); 
+
+// Load datetimepicker in new events
+$(function () {
+  $('#datetimepicker1').datetimepicker();
+});
+
+
+// Load datepicker with <input type="text" class='datepicker'
+$(document).ready(function(){
+  $('.datepicker').datepicker();
+});
 

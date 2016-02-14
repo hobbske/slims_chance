@@ -31,6 +31,23 @@
   </div>
 
   <div class="row">
+    <div class="col-md-6">
+      <div class="form-group text-left">
+        <%= f.label :start_date %><br>
+        <%= f.date_field :start_date, class: 'form-control datepicker' %>
+      </div>
+    </div>
+  
+
+    <div class="form-group text-left">
+      <div class="col-md-6">
+        <%= f.label :end_date %><br>
+        <%= f.date_field :end_date, class: 'form-control datepicker' %>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="row">
     <div class="form-group text-left">
       <%= f.label :start_date %><br>
       <%= f.date_select :start_date %>
@@ -42,19 +59,23 @@
       <%= f.label :end_date %><br>
       <%= f.date_select :end_date %>
     </div>
-  </div>
+  </div> -->
 
   <div class="row">
-    <div class="form-group text-left">
-      <%= f.label :start_time %><br>
-      <%= f.time_select :start_time %>
+    <div class="col-md-6">
+      <div class="form-group text-left">
+        <strong>Session Start</strong>
+        <% f.label :start_time %><br>
+        <%= f.time_select :start_time, :default => {:hour => '8', :minute => '00'} %>
+      </div>
     </div>
-  </div>
 
-  <div class="row">
-    <div class="form-group text-left">
-      <%= f.label :end_time %><br>
-      <%= f.time_select :end_time %>
+    <div class="col-md-6">
+      <div class="form-group text-left">
+        <strong>Session End</strong>
+        <% f.label :end_time %><br>
+        <%= f.time_select :end_time, :default => {:hour => '17', :minute => '00'} %>
+      </div>
     </div>
   </div>
 
@@ -68,3 +89,20 @@
 <%= f.submit "Submit Event", class: 'btn btn-lg btn-danger'%>
 
 <% end %>
+
+<!-- DateTimePicker -->
+
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
