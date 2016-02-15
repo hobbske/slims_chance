@@ -83,7 +83,7 @@
     <div class="col-md-12">
       <div class="form-group text-left">
         <%= f.label :cost %><br>
-        <%= f.time_select :cost %>
+        <%= f.number_field :cost, :class => 'form-control', :step => 'any', :default => '180' %>
       </div>
     </div> 
   </div>

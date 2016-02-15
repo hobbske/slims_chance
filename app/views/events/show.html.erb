@@ -1,3 +1,5 @@
+<p></p>
+
 <div class="container">
   <ol class="breadcrumb text-left">
     <li><%= link_to "Home", root_path %></li>
@@ -7,7 +9,7 @@
   </ol>
 </div>
 
-<div class="row ">
+<div class="container-fluid">
   <div class="col-md-12">
     <div class="jumbotron">
       <div class="text-center brand-text">
@@ -15,69 +17,82 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class="col-md-6 col-md-offset-3">
 
-    <div class="row">
-      <div class="form-group text-left">
-        <strong>Description:</strong>
-        <p class="form-control"><%= @event.event_desc %></p>
-      </div>
+<div class="col-md-6 col-md-offset-3 form-outline">
+  <div class="row">
+    <div class="form-group text-left">
+      <strong>Description:</strong>
+      <p class="form-control"><%= @event.event_desc %></p>
     </div>
+  </div>
 
-    <div class="row">
+   
+  <div class="row">
+    <div class="col-md-6">
       <div class="form-group text-left">
         <strong>Begins:</strong>
         <p class="form-control"><%= @event.start_date.to_s(:short) %></p>
       </div>
-
+    </div>
+    <div class="col-md-6">
       <div class="form-group text-left">
         <strong>Ends:</strong>
         <p class="form-control"><%= @event.end_date.to_s(:short) %></p>
       </div>
     </div>
+  </div>
 
-    <div class="row">
+  <div class="row">
+    <div class="col-md-6">
       <div class="form-group text-left">
-        <strong>Start Time:</strong>
+        <strong>Session Start:</strong>
         <p class="form-control"><%= @event.start_time.to_s(:short) %></p>
       </div>
-
+    </div>
+    <div class="col-md-6">
       <div class="form-group text-left">
-        <strong>End Time:</strong>
+        <strong>Session End:</strong>
         <p class="form-control"><%= @event.end_time.to_s(:short) %></p>
       </div>
-    </div>
+  </div>
 
-    <div class="row">
+  <div class="row" style="margin: auto;">
+    <div class="col-md-6 col-md-offset-3">
       <div class="form-group text-left">
         <strong>Price:</strong>
         <p class="form-control"><%= @event.cost.to_s(:currency) %></p>
       </div>
     </div>
-
-  </div>
-</div>
-
-<div class="col-md-6 col-md-offset-3">
-  <div class="row" style="float: left">
-
-    <%= link_to edit_event_path, class: 'btn btn-lg btn-danger' do %>
-      <i class="glyphicon glyphicon-pencil">Edit</i>
-    <% end %>
-
-    <%= link_to :back, class: 'btn btn-lg btn-danger' do %>
-      <i class="glyphicon glyphicon-hand-left">Back</i>
-    <% end %>
-
   </div>
 
-  <div class="row" style="float: right">
+  <br>
 
-    <%= link_to 'Register', events_path, class: 'btn btn-lg btn-success' %>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row" align="center" style="margin: 10px;">
 
-    <%= link_to 'Volunteer', events_path, class: 'btn btn-lg btn-success' %>
-      
+        <%= link_to edit_event_path, class: 'btn btn-lg btn-danger' do %>
+          <i class="glyphicon glyphicon-pencil">Edit</i>
+        <% end %>
 
+        <%= link_to :back, class: 'btn btn-lg btn-danger' do %>
+          <i class="glyphicon glyphicon-hand-left">Back</i>
+        <% end %>
+
+      </div>
+    </div> 
+
+    <div class="col-md-6">
+      <div class="row" align="center" style="margin: 10px;">
+
+        <%= link_to 'Register', events_path, class: 'btn btn-lg btn-success' %>
+
+        <%= link_to 'Volunteer', events_path, class: 'btn btn-lg btn-success' %>
+          
+      </div>
+    </div>
   </div>
+
 </div>

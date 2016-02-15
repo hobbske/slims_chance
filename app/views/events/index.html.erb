@@ -1,3 +1,5 @@
+<p></p>
+
 <div class="col-md-12">  
   <div class="container">
     <ol class="breadcrumb text-left">
@@ -18,10 +20,10 @@
         <thead>
           <tr>
             <th class="text-center thead-brand">Event</th>
-            <th class="text-center thead-brand">Description</th>
+            <th class="text-center thead-brand lg_md_only">Description</th>
             <th class="text-center thead-brand">Cost</th>
             <th class="text-center thead-brand">Begins</th>
-            <th class="text-center thead-brand">Ends</th>
+            <th class="text-center thead-brand lg_md_only">Ends</th>
             <!-- <th class="text-center thead-brand">Start</th>
             <th class="text-center thead-brand">Finish</th> -->
             
@@ -33,10 +35,10 @@
           <% @events.each do |event| %>
             <tr>
               <td><%= event.event_name %></td>
-              <td><%= event.event_desc %></td>
-              <td><%= event.cost %></td>
+              <td class="lg_md_only"><%= event.event_desc %></td>
+              <td><%= event.cost.to_s(:currency) %></td>
               <td><%= event.start_date.to_s(:short) %></td>
-              <td><%= event.end_date.to_s(:short) %></td>
+              <td class="lg_md_only"><%= event.end_date.to_s(:short) %></td>
               <!-- <td><%= event.start_time.to_s(:short) %></td>
               <td><%= event.end_time.to_s(:short) %></td> -->
 

@@ -40,8 +40,8 @@ $(document).ready(function(){
 // Automatically start carousel and change slides every 2 seconds
 $(document).ready(function() {
 	$('.carousel').carousel({
-	   interval: 8000
-	})
+	   interval: 5000;
+	});
 }); 
 
 // Load datetimepicker in new events
