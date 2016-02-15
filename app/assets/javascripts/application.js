@@ -18,40 +18,19 @@
 //= require bootstrap
 //= require moment
 //= require bootstrap-datetimepicker
+//= require bootstrap-datepicker
 
 // Remove flash notices after 5 seconds
 $(document).ready(function(){
   setTimeout(function(){
-    $('#flash').remove();
+    $('#notice').remove();
+    $('#alert').remove();
   }, 5000);
-});
 
-// make parent class active with child in navbar dropdowns
-$(document).ready(function(){
-  
-  var selector = '.nav li';
-
-  $(selector).on('click', function(){
-      $(selector).removeClass('active');
-      $(this).addClass('active');
+  $('.carousel').carousel({
+     interval: 5000
   });
-});
 
-// Automatically start carousel and change slides every 2 seconds
-$(document).ready(function() {
-	$('.carousel').carousel({
-	   interval: 5000;
-	});
-}); 
-
-// Load datetimepicker in new events
-$(function () {
-  $('#datetimepicker1').datetimepicker();
-});
-
-
-// Load datepicker with <input type="text" class='datepicker'
-$(document).ready(function(){
   $('.datepicker').datepicker();
-});
 
+});
