@@ -71,6 +71,17 @@ h6 {
   letter-spacing: 2px;
 }
 
+.btn-brand {
+  color: #fff;
+  background-color: rgba(221,72,20,1);
+  border-color: rgba(132,43,12,1);
+}
+
+.btn-brand:hover {
+  color: #fff;
+  background-color: rgba(132,43,12,1);
+  border-color: rgba(221,72,20,1);
+}
 
 .container-fluid {
   margin: 0;
@@ -87,10 +98,14 @@ h6 {
   padding-top: 1%;
 }
 
-
 .default-text {
   color: #191919;
   margin: 10% 0%;
+}
+
+.brand-text-two {
+  color: #191919;
+  letter-spacing: 2px;
 }
 
 .default-textx {
@@ -164,7 +179,6 @@ h6 {
   display: inline-block;
   text-align: center;
 
-
 }
 
 .white-text {
@@ -179,6 +193,7 @@ h6 {
   /* ... */
   width: 60%;
   height: 710px;
+
 }
 
 .bottom {
@@ -186,6 +201,8 @@ h6 {
   bottom: 5%;
   left: 10%;
   right: 10%;
+  width: 50%; 
+  margin: 0 auto;
 }
 
 a.brand {
@@ -270,7 +287,211 @@ h5 {
 }
 
 
-/*   ------------------ Mobile Landscape */
+/*   ------------------ MOBILE PORTRAIT -----------------   */
+@media only screen and (max-width: 479px) {
+  
+  // ***** GENERAL *************************
+  
+  .align-middle {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0% 10%;
+  }
+
+  // ***** CAROUSEL - HOME ******************
+
+  .background {
+    /* ... */
+    width: 100%;
+    height: 560px;
+    background-color: #232323;
+  }
+
+  .brand-text {
+    color: #581c08;
+    letter-spacing: 2px;
+    margin: 0px;
+  }
+
+  .carousel-caption {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  img.image {
+    /* ... */
+    width: 370px;
+    height: 330px;
+    margin: auto;
+  }
+
+  .logo {
+    /* ... */
+    width: auto;
+    height: 110px;
+    margin-top: 41%;
+    margin-bottom: 5%;
+    margin-left: 6%;
+  }
+
+  .bottom {
+    position: absolute; 
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-btn {
+    position: absolute; 
+    bottom: 17%;
+    left: 10%;
+    right: 10%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-btn-two {
+    position: absolute; 
+    bottom: 16%;
+    left: 10%;
+    right: 10%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-btn-four {
+    position: absolute; 
+    bottom: 16%;
+    left: 10%;
+    right: 10%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-caption {
+    position: absolute; 
+    bottom: 45%;
+    left: 10%;
+    right: 10%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .bottom-caption-two {
+    position: absolute; 
+    bottom: 45%;
+    left: 10%;
+    right: 10%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .bottom-caption-four {
+    position: absolute; 
+    bottom: 45%;
+    left: 10%;
+    right: 10%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .tagline {
+    position: absolute; 
+    bottom: 26%;
+    left: 10%;
+    right: 10%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .tagline-two {
+    position: absolute; 
+    bottom: 28%;
+    left: 10%;
+    right: 10%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .tagline-four {
+    position: absolute; 
+    bottom: 28%;
+    left: 10%;
+    right: 10%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  #slide-title {
+    font-size: 22px;
+    padding: 3%;
+    margin: auto;
+  }
+
+
+  // ***** BUTTONS *************************
+
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 9px 11px;
+    font-size: 14px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+  }
+
+  
+
+  // ***** FONTS ***************************
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  // ***** TABLE ***************************
+
+  th:nth-of-type(2) {
+  display: none;
+  }
+
+  td:nth-of-type(2) {
+    display: none;
+  }
+
+  th:nth-of-type(5) {
+    display: none;
+  }
+
+  td:nth-of-type(5) {
+    display: none;
+  }
+}
+
+
+/*   ------------------ MOBILE LANDSCAPE -----------------   */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   
   .background {
@@ -317,102 +538,50 @@ h5 {
   }
 }
 
-/*   ------------------ Mobile portrait */
-@media only screen and (max-width: 479px) {
-  
-  .background {
-    /* ... */
-    width: 370px;
-    height: 535px;
-  }
 
-  .carousel-caption {
-    width: 370px;
-  }
+/*   ------------------ PARALLAX: ABOUT SLIM PAGE -----------------*/
 
-  img.image {
-    /* ... */
-    width: 370px;
-    height: 535px;
-    margin: auto;
-  }
-
-  .logo {
-    /* ... */
-    width: auto;
-    height: 120px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  th:nth-of-type(2) {
-  display: none;
-  }
-
-  td:nth-of-type(2) {
-    display: none;
-  }
-
-  th:nth-of-type(5) {
-    display: none;
-  }
-
-  td:nth-of-type(5) {
-    display: none;
-  }
-}
-
-
-
-// Parallax Css
 #intro { 
   background: url(about.png) 50% 0 fixed; 
   height: auto;  
   margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding-bottom: 10px;
+  width: 100%; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding-bottom: 10px;
 }
+
 #home { 
   background: url(slim.jpg) 100% 100% fixed; 
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #232323;
   height: auto;  
   margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 200px 0;
+  width: 100%; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 200px 0;
 }
+
 #about { 
   background: url(about.png) 50% 0 fixed; 
   height: auto;
   margin: 0 auto; 
-    width: 100%; 
-    position: relative; 
-    box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 100px 0;
-    color: #fff;
+  width: 100%; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 100px 0;
+  color: #fff;
 }
 
-/* Non-essential stuff */
+
 .hero-unit {
   background-color: rgba(255,255,255,0);;
   color: rgba(255,255,255,1);
   padding: 10px;
   margin: 10px 0;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .role-object {
