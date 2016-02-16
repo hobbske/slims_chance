@@ -41,6 +41,14 @@ h6 {
   font-weight: 100px;
 }
 
+.align-middle-yield {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+  }
+
 .background-header {
   background: rgba(255,255,255,.7);
   border-radius: 15px;
@@ -192,6 +200,13 @@ h6 {
   margin: 10px;
 }
 
+.align-center-slim {
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0%;
+}
+
 /*   ------------------ Default - screens over 767px wide --------------------------*/
 
 .background {
@@ -231,6 +246,14 @@ a.brand {
   background-size: cover;
 
 }
+
+.center-slim-pic {
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin: 0% 5%;
+    display: inline-block
+  }
 
 img.brand {
   height: 95%;
@@ -278,11 +301,6 @@ h5 {
   font-size: 22px;
 }
 
-#owl-example .item img{
-    display: block;
-    width: 100%;
-    height: 680px;
-}
 
 
 #slide-title {
@@ -291,8 +309,33 @@ h5 {
   margin: auto;
 }
 
+// ***** ABOUT SLIM ******************
+
+.role-object {
+  margin: 4%;
+  padding: 5%;
+  padding-bottom: 0;
+  display: inline-block;
+  color: white;
+  border-color: none;
+  border-radius: 20px;
+  background: url(about.png);
+}
+
+.role-object-title {
+  margin: 2% 0%;
+  font-size: 28px;
+}
+
+.media-object { 
+  width: 64px; 
+  height: 64px; 
+  padding-bottom: 30px;
+}
+
 
 /*   ------------------ MOBILE PORTRAIT -----------------   */
+
 @media only screen and (max-width: 479px) {
   
   // ***** GENERAL *************************
@@ -436,8 +479,13 @@ h5 {
     margin: 0 auto;
   }
 
+  .slide-title {
+    padding: 3%;
+    margin: auto;
+  }
+
   #slide-title {
-    font-size: 22px;
+    font-size: 20px;
     padding: 3%;
     margin: auto;
   }
@@ -480,7 +528,7 @@ h5 {
     font-size: 10px;
   }
 
-  // ***** TABLE ***************************
+  // ***** EVENTS - TABLE ***************************
 
   th:nth-of-type(2) {
   display: none;
@@ -497,7 +545,17 @@ h5 {
   td:nth-of-type(5) {
     display: none;
   }
+
+  // ***** ABOUT SLIM ***************************
+
+  .role-object-title {
+    margin: 2% 0%;
+    font-size: 24px;
+  }
+
 }
+
+
 
 
 /*   ------------------ MOBILE LANDSCAPE -----------------   */
@@ -548,7 +606,7 @@ h5 {
 }
 
 
-/*   ------------------ PARALLAX: ABOUT SLIM PAGE -----------------*/
+/*   ------------------ ABOUT SLIM -----------------*/
 
 #intro { 
   background: url(about.png) 50% 0 fixed; 
@@ -593,17 +651,5 @@ h5 {
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-.role-object {
-  margin: 0% 4%;
-  color: white;
-  border-color: none;
-  border-radius: 20px;
-  background: url(about.png);
-}
 
-.media-object { 
-  width: 64px; 
-  height: 64px; 
-  padding-bottom: 30px;
-}
 
