@@ -18,6 +18,8 @@ gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17', '>= 4.17.37'
 # Use bootstrap-datepicker-rails for new event start and end dates
 gem 'bootstrap-datepicker-rails', '~> 1.5'
+# Use Owlcarousel to enable touch swipe controls for mobile carousel users.
+gem 'owlcarousel-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
