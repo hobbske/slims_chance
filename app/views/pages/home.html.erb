@@ -19,18 +19,18 @@
       <div class="carousel-caption align-middle">
 				<div class="bottom-caption">
 				  <div class="brand-text-lt background-header">
-				  	<h2 id="slide-title"><strong class="default-text-two">S</strong>top <strong class="default-text-two">L</strong>etting <strong class="default-text-two">I</strong>nnocence <strong class="default-text-two">M</strong>is<strong class="default-text-two">S</strong> (out)!</h2>
+				  	<h2 id="slide-title"><strong class="brand-text-only">S</strong>top <strong class="brand-text-only">L</strong>etting <strong class="brand-text-only">I</strong>nnocence <strong class="brand-text-only">M</strong>is<strong class="brand-text-only">S</strong> (out)!</h2>
 				  </div>
 				</div>
 				<div class="tagline">
-			  	<h3>Created to help children, when they lose a parent due to a traumatic illness or sudden death.</h3>
+			  	<h3>Created to help children that have lost a parent, due to a traumatic illness or sudden death.</h3>
 				</div>			
 			  <div class="row ">
 			  	<%= image_tag 'logo.png', :align => "left", :class => "logo"%>
 				</div>
 				
 				<div class="bottom-btn">
-			  	<p><%= button_to "Learn More", about_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
+			  	<p><%= button_to "Learn More", slim_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
 			  </div>
 			</div>
     </div>
@@ -47,7 +47,7 @@
 				  </div>
 				</div>
 				<div class="tagline-two">
-			  	<h3>Registration Starting Soon!</h3>
+			  	<h3>Registration <br> Starting Soon!</h3>
 				</div>
 
 				<br>
@@ -97,7 +97,7 @@
 				</div>
 
 				<div class="bottom-btn-four">
-			  	<p><a class="btn btn-primary btn-lg">Learn more</a></p>
+			  	<p><%= button_to "Learn More", about_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
 			  </div>			
       </div>    
     </div>

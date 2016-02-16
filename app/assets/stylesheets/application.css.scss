@@ -66,6 +66,11 @@ h6 {
   margin: 10px;
 }
 
+.brand-text-only {
+  color: #581c08;
+  letter-spacing: 2px;
+}
+
 .brand-text-lt {
   color: #DD4814;
   letter-spacing: 2px;
@@ -192,7 +197,7 @@ h6 {
 .background {
   /* ... */
   width: 60%;
-  height: 710px;
+  height: 680px;
 
 }
 
@@ -221,7 +226,7 @@ a.brand {
 
 .carousel-caption {
   width: 60%; 
-  height: 710px;
+  height: 680px;
   margin: auto;
   background-size: cover;
 
@@ -321,6 +326,10 @@ h5 {
     margin: auto;
   }
 
+  .carousel-indicators {
+    bottom: 6%;
+  }
+
   img.image {
     /* ... */
     width: 370px;
@@ -357,7 +366,7 @@ h5 {
 
   .bottom-btn-two {
     position: absolute; 
-    bottom: 16%;
+    bottom: 18%;
     left: 10%;
     right: 10%;
     width: 50%; 
@@ -366,7 +375,7 @@ h5 {
 
   .bottom-btn-four {
     position: absolute; 
-    bottom: 16%;
+    bottom: 18%;
     left: 10%;
     right: 10%;
     width: 50%; 
