@@ -207,23 +207,7 @@ h6 {
   margin: 0%;
 }
 
-/*   ------------------ Default - screens over 767px wide --------------------------*/
-
-.background {
-  /* ... */
-  width: 60%;
-  height: 680px;
-
-}
-
-.bottom {
-  position: absolute; 
-  bottom: 5%;
-  left: 10%;
-  right: 10%;
-  width: 50%; 
-  margin: 0 auto;
-}
+/*   ------------------ DESKTOP - SCREENS OVER 767px WIDE --------------------------*/
 
 a.brand {
   color: #581c08;
@@ -237,14 +221,6 @@ a.brand {
   font-size: 10ox;
   padding: 0px 5px;
   margin: 0% 1%;
-}
-
-.carousel-caption {
-  width: 60%; 
-  height: 680px;
-  margin: auto;
-  background-size: cover;
-
 }
 
 .center-slim-pic {
@@ -262,24 +238,11 @@ img.brand {
   left: 20%;
 }
 
-img.image {
-	/* ... */
-  width: 173%;
-  height: 750px;
-  margin: auto;
-}
-
-.logo {
-  /* ... */
-  width: 23%;
-  height: 250px;
-  margin: 0%;
-  margin-top: 2%;
-}
-
 ul.nav {
   font-size: 18px;
 }
+
+// ***** FONTS ***************************
 
 h1 {
   font-size: 60px;
@@ -300,6 +263,129 @@ h4 {
 h5 {
   font-size: 22px;
 }
+
+// ***** CAROUSEL - HOME ******************
+
+.background {
+  /* ... */
+  width: 60%;
+  height: 710px;
+}
+
+.bottom {
+  position: absolute; 
+  bottom: 5%;
+  left: 10%;
+  right: 10%;
+  width: 50%; 
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  width: 60%; 
+  height: 710px;
+  margin: auto;
+  background-size: cover;
+}
+
+.logo {
+  /* ... */
+  width: auto;
+  height: 210px;
+  margin-top: 28%;
+  margin-bottom: 10%;
+  margin-left: 0%;
+}
+
+img.image {
+  /* ... */
+  width: 180%;
+  height: 710px;
+  margin: auto;
+}
+
+
+.bottom-btn {
+  position: absolute; 
+  bottom: 3%;
+  left: 10%;
+  right: 10%;
+  width: 50%; 
+  margin: 0 auto;
+}
+
+.bottom-btn-two {
+  position: absolute; 
+  bottom: 3%;
+  left: 10%;
+  right: 10%;
+  width: 50%; 
+  margin: 0 auto;
+}
+
+.bottom-btn-four {
+  position: absolute; 
+  bottom: 3%;
+  left: 10%;
+  right: 10%;
+  width: 50%; 
+  margin: 0 auto;
+}
+
+.bottom-caption {
+  position: absolute; 
+  bottom: 73%;
+  left: 10%;
+  right: 10%;
+  width: 80%; 
+  margin: 0 auto;
+}
+
+.bottom-caption-two {
+  position: absolute; 
+  bottom: 73%;
+  left: 10%;
+  right: 10%;
+  width: 80%; 
+  margin: 0 auto;
+}
+
+.bottom-caption-four {
+  position: absolute; 
+  bottom: 73%;
+  left: 10%;
+  right: 10%;
+  width: 80%; 
+  margin: 0 auto;
+}
+
+.tagline {
+  position: absolute; 
+  bottom: 15%;
+  left: 2%;
+  right: 2%;
+  width: 93%; 
+  margin: 0 auto;
+}
+
+.tagline-two {
+  position: absolute; 
+  bottom: 15%;
+  left: 10%;
+  right: 10%;
+  width: 80%; 
+  margin: 0 auto;
+}
+
+.tagline-four {
+  position: absolute; 
+  bottom: 15%;
+  left: 10%;
+  right: 10%;
+  width: 80%; 
+  margin: 0 auto;
+}
+
 
 
 

@@ -29,7 +29,7 @@ $(document).ready(function(){
   }, 5000);
 
   $('.carousel').carousel({
-     interval: 8000
+     interval: 800000
   });
 
   $('.datepicker').datepicker();
