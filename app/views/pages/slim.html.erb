@@ -50,36 +50,70 @@
   </section>
 
   <!-- Section #2 -->
-  <section id="home" data-speed="4" data-type="background" class="align-center-slim special">
-    <div class="container">
-      <div class="row center-slim-pic">
+  <section id="home-col-two" data-speed="4" data-type="background" class="align-center-slim special">
+    <div class="container-fluid">
+      <div class="row">
         <div class="col-md-4 well role-object">
           <%= image_tag "father_portrait.png", size: "250x270", :class => "img-rounded" %>
           <div class="role-object-title" align="center">
-            <h3>Father</h3>
+            <h2>Father</h2>
           </div>
           <!-- <p>Text Here.</p> -->
         </div>
         <div class="col-md-4 well role-object">
           <%= image_tag "son.png", size: "250x270", :class => "img-rounded" %>
           <div class="role-object-title" align="center">
-            <h3>Son</h3>
+            <h2>Son</h2>
           </div>
           <!-- <p>Text Here.</p> -->
         </div>
       </div>
-      <div class="row center-slim-pic">
-        <div class="col-md-4 well role-object">
+      <div class="row">
+        <div class="col-md-3 well role-object">
           <%= image_tag "brother.png", size: "250x270", :class => "img-rounded" %>
           <div class="role-object-title" align="center">
-            <h3>Brother</h3>
+            <h2>Brother</h2>
           </div>
           <!-- <p>Text Here.</p> -->
         </div>
-        <div class="col-md-4 well role-object">
+        <div class="col-md-3 well role-object">
           <%= image_tag "uncle.png", size: "250x270", :class => "img-rounded" %>
           <div class="role-object-title" align="center">
-            <h3>Uncle</h3>
+            <h2>Uncle</h2>
+          </div>
+          <!-- <p>Text Here.</p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="home-col-four" data-speed="4" data-type="background" class="align-center-slim special">
+    <div class="container-fluid">
+      <div class="row row-centered">
+        <div class="col-md-3 well role-object col-centered">
+          <%= image_tag "father_portrait.png", size: "170x190", :class => "img-rounded" %>
+          <div class="role-object-title" align="center">
+            <h2>Father</h2>
+          </div>
+          <!-- <p>Text Here.</p> -->
+        </div>
+        <div class="col-md-3 well role-object col-centered">
+          <%= image_tag "son.png", size: "170x190", :class => "img-rounded" %>
+          <div class="role-object-title" align="center">
+            <h2>Son</h2>
+          </div>
+          <!-- <p>Text Here.</p> -->
+        </div>
+        <div class="col-md-3 well role-object col-centered">
+          <%= image_tag "brother.png", size: "170x190", :class => "img-rounded" %>
+          <div class="role-object-title" align="center">
+            <h2>Brother</h2>
+          </div>
+          <!-- <p>Text Here.</p> -->
+        </div>
+        <div class="col-md-3 well role-object col-centered">
+          <%= image_tag "uncle.png", size: "170x190", :class => "img-rounded" %>
+          <div class="role-object-title" align="center">
+            <h2>Uncle</h2>
           </div>
           <!-- <p>Text Here.</p> -->
         </div>
@@ -91,6 +125,7 @@
   <section id="about" data-speed="2" data-type="background" class="align-center-slim special">
     <div class="container">
       <div class="row-fluid">
+      <hr>
         <div class="col-md-12 hero-unit">
           <h2>The Impact On Our Mission</h2>
           <p>How did the backstory drive your desire to start the foundation.</p>
@@ -98,6 +133,9 @@
           <br>
           <p><%= button_to "Our Mission", about_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
         </div>
+  
+        <hr>
+
         <div class="col-md-12 hero-unit">
           <h2>Foundation Focus</h2>
           <div class="media">

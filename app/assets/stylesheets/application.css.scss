@@ -41,6 +41,8 @@ h6 {
   font-weight: 100px;
 }
 
+
+
 .align-middle-yield {
     top: 0;
     bottom: 0;
@@ -96,6 +98,17 @@ h6 {
   border-color: rgba(221,72,20,1);
 }
 
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: -4px;
+}
+
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -136,6 +149,7 @@ h6 {
   background-size: 100% 100%;
   border-radius: 15px;
   padding: 5px;
+  margin-bottom: 0;
 }
 
 .jumbotron-brand { 
@@ -224,12 +238,8 @@ a.brand {
 }
 
 .center-slim-pic {
-    width: 95%;
-    left: 0;
-    right: 0;
-    margin: 0% 5%;
-    display: inline-block
-  }
+  display: inline-block
+}
 
 img.brand {
   height: 95%;
@@ -239,29 +249,29 @@ img.brand {
 }
 
 ul.nav {
-  font-size: 18px;
+  font-size: 1.250em; // 20px
 }
 
 // ***** FONTS ***************************
 
 h1 {
-  font-size: 60px;
+  font-size: 3.75em; // 60px
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 3.00em;  // 48px
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.75em; // 28px
 }
 
 h4 {
-  font-size: 28px;
+  font-size: 1.75em; // 28px
 }
 
 h5 {
-  font-size: 22px;
+  font-size: 1.375em; // 2px
 }
 
 // ***** CAROUSEL - HOME ******************
@@ -298,6 +308,20 @@ h5 {
 }
 
 img.image {
+  /* ... */
+  width: 180%;
+  height: 710px;
+  margin: auto;
+}
+
+img.image-two {
+  /* ... */
+  width: 180%;
+  height: 710px;
+  margin: auto;
+}
+
+img.image-four {
   /* ... */
   width: 180%;
   height: 710px;
@@ -386,10 +410,19 @@ img.image {
   margin: 0 auto;
 }
 
-
-
-
 #slide-title {
+  font-size: 38px;
+  padding: 3%;
+  margin: auto;
+}
+
+#slide-title-two {
+  font-size: 38px;
+  padding: 3%;
+  margin: auto;
+}
+
+#slide-title-four {
   font-size: 38px;
   padding: 3%;
   margin: auto;
@@ -397,26 +430,38 @@ img.image {
 
 // ***** ABOUT SLIM ******************
 
+#home-col-two {
+  display: none;
+}
+
+#home-col-four {
+  // display: none;
+}
+
 .role-object {
-  margin: 4%;
-  padding: 5%;
-  padding-bottom: 0;
   display: inline-block;
   color: white;
+  width: auto;
+  height: auto;
   border-color: none;
-  border-radius: 20px;
+  border-radius: 10px;
   background: url(about.png);
 }
 
 .role-object-title {
-  margin: 2% 0%;
-  font-size: 28px;
+  margin: 5px 0;
 }
 
 .media-object { 
   width: 64px; 
   height: 64px; 
   padding-bottom: 30px;
+}
+
+
+
+table {
+  font-size: 0.875em;
 }
 
 
@@ -432,6 +477,37 @@ img.image {
     left: 0;
     right: 0;
     margin: 0% 10%;
+  }
+
+  .breadcrumb {
+    background: rgba(255,255,255,0);
+    font-size: 10px;
+    padding: 0px 5px;
+    margin: 0% 1%;
+  }
+
+  // ***** NAVBAR **************************
+
+  a.brand {
+    color: #581c08;
+    margin-right: 30px; 
+    font-size: 1.000em;
+    font-weight: 900px;
+  }
+
+  .center-slim-pic {
+    display: inline-block
+  }
+
+  img.brand {
+    height: 95%;
+    margin: auto;
+    margin-top: 2%;
+    left: 20%;
+  }
+
+  ul.nav {
+    font-size: 1.125em; // 18px
   }
 
   // ***** CAROUSEL - HOME ******************
@@ -466,6 +542,20 @@ img.image {
     margin: auto;
   }
 
+  img.image-two {
+    /* ... */
+    width: 370px;
+    height: 330px;
+    margin: auto;
+  }
+
+  img.image-four {
+    /* ... */
+    width: 370px;
+    height: 330px;
+    margin: auto;
+  }
+
   .logo {
     /* ... */
     width: auto;
@@ -486,7 +576,7 @@ img.image {
 
   .bottom-btn {
     position: absolute; 
-    bottom: 19%;
+    bottom: 20%;
     left: 10%;
     right: 10%;
     width: 50%; 
@@ -576,6 +666,18 @@ img.image {
     margin: auto;
   }
 
+  #slide-title-two {
+    font-size: 20px;
+    padding: 3%;
+    margin: auto;
+  }
+
+  #slide-title-four {
+    font-size: 20px;
+    padding: 3%;
+    margin: auto;
+  }
+
 
   // ***** BUTTONS *************************
 
@@ -591,30 +693,34 @@ img.image {
   // ***** FONTS ***************************
 
   h1 {
-    font-size: 22px;
+    font-size: 1.375em;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 1.250em;
   }
 
   h3 {
-    font-size: 18px;
+    font-size: 1.250em;
   }
 
   h4 {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   h5 {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   p {
-    font-size: 10px;
+    font-size: 0.625em;
   }
 
   // ***** EVENTS - TABLE ***************************
+
+  table {
+    font-size: 0.750em; // 12px
+  }
 
   th:nth-of-type(2) {
   display: none;
@@ -636,7 +742,6 @@ img.image {
 
   .role-object-title {
     margin: 2% 0%;
-    font-size: 24px;
   }
 
 }
@@ -647,47 +752,282 @@ img.image {
 /*   ------------------ MOBILE LANDSCAPE -----------------   */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   
-  .background {
-    /* ... */
-    width: 400px;
-    height: 290px;
+  // ***** GENERAL *************************
+  
+  .align-middle {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0% 10%;
   }
 
-  .btn-lg, .btn-group-lg > .btn {
-    padding: 6px 8px;
-    margin: 2px;
-    font-size: 12px;
-    line-height: 1.3333333;
-    border-radius: 6px;
+  .breadcrumb {
+    background: rgba(255,255,255,0);
+    font-size: 10px;
+    padding: 0px 5px;
+    margin: 0% 1%;
+  }
+
+  // ***** NAVBAR **************************
+
+  a.brand {
+    color: #581c08;
+    margin-right: 30px; 
+    font-size: 1.000em;
+    font-weight: 900px;
+  }
+
+  .center-slim-pic {
+    display: inline-block
+  }
+
+  img.brand {
+    height: 95%;
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 3%;
+    left: 25%;
+  }
+
+  ul.nav {
+    font-size: 1.125em; // 18px
+  }
+
+  // ***** CAROUSEL - HOME ******************
+
+  .background {
+    /* ... */
+    width: 675px;
+    height: 300px;
+    background-color: #232323;
+  }
+
+  .brand-text {
+    color: #581c08;
+    letter-spacing: 2px;
+    margin: 0px;
   }
 
   .carousel-caption {
-    width: 400px;
+    width: 675px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .carousel-indicators {
+    bottom: 7%;
   }
 
   img.image {
     /* ... */
-    width: 400px;
-    height: 290px;
+    width: 740px;
+    height: 100%;
+    margin: auto;
+  }
+
+  img.image-two {
+    /* ... */
+    width: 700px;
+    height: 100%;
+    margin: auto;
+  }
+
+  img.image-four {
+    /* ... */
+    width: 650px;
+    height: 100%;
     margin: auto;
   }
 
   .logo {
     /* ... */
     width: auto;
-    height: 50px;
+    height: 110px;
+    margin-top: 40%;
+    margin-bottom: 5%;
+    margin-left: 20%;
+  }
+
+  .bottom {
+    position: absolute; 
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-btn {
+    position: absolute; 
+    bottom: 34%;
+    left: 7%;
+    right: 10%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-btn-two {
+    position: absolute; 
+    bottom: 34%;
+    left: 7%;
+    right: 10%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-btn-four {
+    position: absolute; 
+    bottom: 34%;
+    left: 7%;
+    right: 10%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-caption {
+    position: absolute; 
+    bottom: 60%;
+    left: 5%;
+    right: 5%;
+    width: 60%; 
+    margin: 0 auto;
+
+  }
+
+  .bottom-caption-two {
+    position: absolute; 
+    bottom: 60%;
+    left: 5%;
+    right: 5%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .bottom-caption-four {
+    position: absolute; 
+    bottom: 60%;
+    left: 5%;
+    right: 5%;
+    width: 50%; 
+    margin: 0 auto;
+  }
+
+  .tagline {
+    position: absolute; 
+    bottom: 60%;
+    left: 2%;
+    right: 2%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .tagline-two {
+    position: absolute; 
+    bottom: 41%;
+    left: 8%;
+    right: 10%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .tagline-four {
+    position: absolute; 
+    bottom: 43%;
+    left: 8%;
+    right: 10%;
+    width: 80%; 
+    margin: 0 auto;
+  }
+
+  .slide-title {
+    padding: 3%;
+    margin: auto;
+  }
+
+  #slide-title {
+    font-size: 1.250em;
+    padding: 3%;
+    margin: auto;
+    display: none;
+  }
+
+  #slide-title-two {
+    font-size: 1.250em;
+    padding: 3%;
+    margin: auto;
+  }
+
+  #slide-title-four {
+    font-size: 1.250em;
+    padding: 3%;
+    margin: auto;
+  }
+
+
+  // ***** BUTTONS *************************
+
+  .btn-lg, .btn-group-lg > .btn {
+    padding: 7px 9px;
+    font-size: 0.875em;
+    line-height: 1.3333333;
+    border-radius: 6px;
+  }
+
+  
+
+  // ***** FONTS ***************************
+
+  h1 {
+    font-size: 1.375em;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 1.250em;
   }
 
   h3 {
-    font-size: 12px;
+    font-size: 1.250em;
   }
 
   h4 {
-    font-size: 11px;
+    font-size: 0.875em;
+  }
+
+  h5 {
+    font-size: 0.875em;
+  }
+
+  p {
+    font-size: 0.625em;
+  }
+
+  // ***** EVENTS - TABLE ***************************
+
+  table {
+    font-size: 0.750em; // 12px
+  }
+
+  th:nth-of-type(2) {
+  display: none;
+  }
+
+  td:nth-of-type(2) {
+    display: none;
+  }
+
+  th:nth-of-type(5) {
+    display: none;
+  }
+
+  td:nth-of-type(5) {
+    display: none;
+  }
+
+  // ***** ABOUT SLIM ***************************
+
+  .role-object-title {
+    margin: 2% 0%;
   }
 }
 
