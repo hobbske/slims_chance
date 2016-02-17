@@ -26,10 +26,10 @@ $(document).ready(function(){
   setTimeout(function(){
     $('#notice').remove();
     $('#alert').remove();
-  }, 5000);
+  }, 3000);
 
   $('.carousel').carousel({
-     interval: 5000000
+     interval: 5000
   });
 
   $('.datepicker').datepicker();
