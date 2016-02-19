@@ -42,6 +42,13 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
             <br>
+            <div class="row-fluid text-center">
+	            <div class="col-md-6 col-md-offset-3">
+					      <div class="row" align="center" style="margin: 10px;">
+					        <%= link_to 'Click Here To Register or Volunteer', events_path, class: 'btn btn-lg btn-brand' %> 
+					      </div>
+					    </div>
+					  </div>
           </div>
         </div>
       </div>
@@ -83,9 +90,11 @@
       <div class="row-fluid">
       <hr>
         <div class="col-md-12 hero-unit">
-          <h2>View Our Photo Gallery On Facebook</h2>
+          <h2>View Our Photo Gallery On <i class="icon-facebook icon-white icon-large"></i>Facebook</h2>
           <br>
-          <p><%= button_to "Click To View Gallery", "https://www.facebook.com/SlimsChance/photos_stream?tab=photos_stream", align: 'center', class: 'btn btn-primary btn-brand btn-block' %></p>
+          <h2>
+          	<%= link_to "Click To View Gallery In A New Window", "https://www.facebook.com/SlimsChance/photos_stream?tab=photos_stream", align: 'center', target: 'blank', class: 'btn btn-lg btn-brand btn-block' %>
+          </h2>
         </div>
   
         <hr>

@@ -11,6 +11,8 @@ gem 'bootstrap-sass'
 gem 'bootswatch-sass', '~> 3.3', '>= 3.3.5'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+# Use font-awesome for social media icons
+gem 'font-awesome-sass', '~> 4.5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use bootstrap3-datetimepicker-rails for new event selections
