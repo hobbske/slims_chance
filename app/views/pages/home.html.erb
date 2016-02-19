@@ -1,6 +1,6 @@
 <div class="container-fluid special">
 	<!-- Carousel -->
-	<div id="carousel-example-generic" class="carousel" data-ride="carousel">
+	<div id="carousel-example-generic" class="carousel carousel-fade" data-ride="carousel">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
 	    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -11,8 +11,6 @@
 
 	  <!-- Wrapper for slides -->
 	  <div class="carousel-inner" role="listbox">
-	    
-
 	    <div class="item active">
 	      <div class="background">
 			  	<%= image_tag 'cover_photo_lg.jpg', :alternate => "Slide 1", :class => "image" %>
@@ -54,7 +52,7 @@
 					<br>
 					  
 					<div class="bottom-btn-two">
-				  	<p><%= button_to "Learn More", events_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
+				  	<p><%= button_to "Learn More", camp_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
 				  </div>
 				</div>
 	    </div>

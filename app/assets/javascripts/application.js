@@ -1,5 +1,4 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
+// This is a manifest file that'll be compiled into application.js, which will include all the files // listed below.
 //
 // Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
 // or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
@@ -30,7 +29,7 @@ $(document).ready(function(){
   }, 5000);
   // Set homepage carousel slide interval
   $('.carousel').carousel({
-     interval: 5000;
+     interval: 5000
   });
   // Create calendar style date picker for event create and update
   $('.datepicker').datepicker();
@@ -60,19 +59,18 @@ $(document).ready(function(){
 
 
 // Set home page carousel controls
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  $('.carousel-control.left').click(function() {
-    $('#carousel-example-generic').carousel('prev');
-    });
+//   $('.carousel-control.left').click(function() {
+//     $('#carousel-example-generic').carousel('prev');
+//     });
 
-  $('.carousel-control.right').click(function() {
-    $('#carousel-example-generic').carousel('next');
-  });
+//   $('.carousel-control.right').click(function() {
+//     $('#carousel-example-generic').carousel('next');
+//   });
 
-});
+// });
 
 
   
-
 
