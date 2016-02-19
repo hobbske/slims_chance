@@ -21,31 +21,23 @@
 //= require bootstrap-datepicker
 //= require owl.carousel
 
-// Remove flash notices after 5 seconds
+
 $(document).ready(function(){
+  // Remove flash notices after 5 seconds
   setTimeout(function(){
     $('#notice').remove();
     $('#alert').remove();
   }, 5000);
-
+  // Set homepage carousel slide interval
   $('.carousel').carousel({
      interval: 5000;
   });
-
-  $('.carousel-control.left').click(function() {
-  $('#carousel-example-generic').carousel('prev');
-  });
-
-  $('.carousel-control.right').click(function() {
-    $('#carousel-example-generic').carousel('next');
-  });
-
+  // Create calendar style date picker for event create and update
   $('.datepicker').datepicker();
 
 
   // Parallax init JS
   
-
   $('section[data-type="background"]').each(function(){
    // declare the variable to affect the defined data-type
    var $scroll = $(this);
@@ -62,6 +54,21 @@ $(document).ready(function(){
       $scroll.css({ backgroundPosition: coords });   
     }); // end window scroll
   });  // end section function
+
+});
+
+
+
+// Set home page carousel controls
+$(document).ready(function(){
+
+  $('.carousel-control.left').click(function() {
+    $('#carousel-example-generic').carousel('prev');
+    });
+
+  $('.carousel-control.right').click(function() {
+    $('#carousel-example-generic').carousel('next');
+  });
 
 });
 
