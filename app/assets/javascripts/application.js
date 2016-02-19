@@ -26,10 +26,18 @@ $(document).ready(function(){
   setTimeout(function(){
     $('#notice').remove();
     $('#alert').remove();
-  }, 3000);
+  }, 5000);
 
   $('.carousel').carousel({
-     interval: 5000
+     interval: 5000;
+  });
+
+  $('.carousel-control.left').click(function() {
+  $('#carousel-example-generic').carousel('prev');
+  });
+
+  $('.carousel-control.right').click(function() {
+    $('#carousel-example-generic').carousel('next');
   });
 
   $('.datepicker').datepicker();

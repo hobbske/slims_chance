@@ -29,6 +29,7 @@ body {
   /* background-color: rgba(176,227,176,1); green */
   background-color: rgba(204,204,204,.4); /* gray */
   letter-spacing: 2px;
+  height: auto;
 }
 
 h1,
@@ -112,6 +113,7 @@ h6 {
 .container-fluid {
   margin: 0;
   padding: 0;
+  height: 100%
 }
 
 .form-outline {
@@ -280,15 +282,7 @@ h5 {
   /* ... */
   width: 60%;
   height: 710px;
-}
-
-.bottom {
-  position: absolute; 
-  bottom: 5%;
-  left: 10%;
-  right: 10%;
-  width: 50%; 
-  margin: 0 auto;
+  background-color: #232323;
 }
 
 .carousel-caption {
@@ -307,23 +301,32 @@ h5 {
   margin-left: 0%;
 }
 
+.bottom {
+  position: absolute; 
+  bottom: 5%;
+  left: 10%;
+  right: 10%;
+  width: 50%; 
+  margin: 0 auto;
+}
+
 img.image {
   /* ... */
-  width: 180%;
+  width: 185%;
   height: 710px;
   margin: auto;
 }
 
 img.image-two {
   /* ... */
-  width: 180%;
+  width: 170%;
   height: 710px;
   margin: auto;
 }
 
 img.image-four {
   /* ... */
-  width: 180%;
+  width: 170%;
   height: 710px;
   margin: auto;
 }
@@ -331,7 +334,7 @@ img.image-four {
 
 .bottom-btn {
   position: absolute; 
-  bottom: 3%;
+  bottom: 4%;
   left: 10%;
   right: 10%;
   width: 50%; 
@@ -340,7 +343,7 @@ img.image-four {
 
 .bottom-btn-two {
   position: absolute; 
-  bottom: 3%;
+  bottom: 4%;
   left: 10%;
   right: 10%;
   width: 50%; 
@@ -349,7 +352,7 @@ img.image-four {
 
 .bottom-btn-four {
   position: absolute; 
-  bottom: 3%;
+  bottom: 4%;
   left: 10%;
   right: 10%;
   width: 50%; 
@@ -410,6 +413,11 @@ img.image-four {
   margin: 0 auto;
 }
 
+#full-screen {
+  padding: 0px;
+  margin: 0px;
+}
+
 #slide-title {
   font-size: 38px;
   padding: 3%;
@@ -429,14 +437,6 @@ img.image-four {
 }
 
 // ***** ABOUT SLIM ******************
-
-#home-col-two {
-  display: none;
-}
-
-#home-col-four {
-  // display: none;
-}
 
 .role-object {
   display: inline-block;
@@ -1034,8 +1034,10 @@ table {
 
 /*   ------------------ ABOUT SLIM -----------------*/
 
-#intro { 
-  background: url(about.png) 50% 0 fixed; 
+#section-one { 
+  background: url(about.png) 50% 0 fixed;
+  background-image: image-url("about.png") 50% 0 fixed;
+  background-color: #232323;
   height: auto;  
   margin: 0 auto; 
   width: 100%; 
@@ -1044,11 +1046,12 @@ table {
   padding-bottom: 10px;
 }
 
-#home { 
-  background: url(slim.jpg) 100% 100% fixed; 
+#section-two {
+  background: url(slim.jpg) 100% 100% fixed;
+  background-image: image-url("slim.jpg") 50% 0 fixed; 
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #232323;
+  background-color: #581c08;
   height: auto;  
   margin: 0 auto; 
   width: 100%; 
@@ -1057,8 +1060,10 @@ table {
   padding: 200px 0;
 }
 
-#about { 
-  background: url(about.png) 50% 0 fixed; 
+#section-three { 
+  background: url(about.png) 50% 0 fixed;
+  background-image: image-url("about.png") 50% 0 fixed;
+  background-color: #232323;
   height: auto;
   margin: 0 auto; 
   width: 100%; 
@@ -1076,6 +1081,9 @@ table {
   margin: 10px 0;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
+
+
+
 
 
 
