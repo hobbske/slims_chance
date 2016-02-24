@@ -9,7 +9,7 @@
   <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-default ">
 	  <div class="container">
 	    <div class="navbar-header">
 
@@ -20,33 +20,36 @@
 	        <span class="icon-bar"></span>
 	      </button>
 
-	      <%= link_to root_path, class: 'brand' do %>
-          <%= image_tag 'logo_sm_no_name.png', :class => "brand" %> Slim's Chance Foundation
-        <% end %>
+	      <div style="margin: 4% 0%;">
+	      	<%= link_to root_path, class: 'brand-logo' do %>
+          	<%= image_tag 'slims_chance_logo.png', :class => '' %> Slim's Chance Foundation
+        	<% end %>
+        </div>
 	    </div>
 
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav navbar-tabs">
-	        <li class="<%= active_class(root_path) %>"><%= link_to "Home", root_path %></li>
+	      <ul class="nav navbar-nav navbar-right" id="menu-main">
+	        <!-- <li class="<%= active_class(root_path) %>"><%= link_to "Home", root_path %></li> -->
+          <li class="<%= active_class(slim_path) %>"><%= link_to "Meet Slim", slim_path %></li>
           <li class="<%= active_class(contact_path) %>"><%= link_to "Contact Us", contact_path %></li>
 			
-					<li class="dropdown">
+					<!-- <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About <span class="caret"></span></a>
 	          <ul class="dropdown-menu" role="menu">
 	            <li class="<%= active_class(about_path) %>"><%= link_to "Our Mission", about_path %></li>
 	            <li class="<%= active_class(slim_path) %>"><%= link_to "About Slim", slim_path %></li>
 	          </ul>
-	        </li>
+	        </li> -->
 
 
 	        <li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events <span class="caret"></span></a>
-	          <ul class="dropdown-menu" role="menu">
+	          <ul class="dropdown-menu" role="menu" id="sub-link">
 							<li class="<%= active_class(camp_path) %>"><%= link_to "Baseball Camp", camp_path %></li>
-							<li></li>
-	            	<li class="divider"></li>
+				
+	            
 							<li class="<%= active_class(events_path) %>"><%= link_to "All Events", events_path %></li>
-	            	<li class="divider"></li>
+	          
 	            
 	            <!-- <li><a href="#">Valentine's Day Dinner</a></li> -->
 	            	<!-- <li class="divider"></li>
@@ -55,8 +58,8 @@
 	        </li>
 
 	        <li class="dropdown">
-	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Donate <span class="caret"></span></a>
-	          <ul class="dropdown-menu" role="menu">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Get Involved <span class="caret"></span></a>
+	          <ul class="dropdown-menu" role="menu" id="sub-link">
 	            <li class="<%= active_class(about_path) %>"><%= link_to "PayPal", about_path %></li>
 	            <li class="<%= active_class(slim_path) %>"><%= link_to "Credit Card", slim_path %></li>
 	          </ul>
@@ -74,7 +77,7 @@
 		      <li><a href="#"></a></li>
 	      </ul> -->
 	      
-	      <ul class="nav navbar-nav navbar-right">
+	      <!-- <ul class="nav navbar-nav navbar-right">
 
 					<% if user_signed_in? %>
 						<li><%= link_to "Home", root_path %></li>
@@ -85,12 +88,12 @@
             <li><%= link_to "Login", new_user_session_path, method: :get, align: 'center' %></li>
           <% end %>
 
-	      </ul>
+	      </ul> -->
 	    </div>
 	  </div>
 	</nav>
 
-<div class="container-fluid align-middle-yield">
+<div class="container-fluid">
 	
 	<% unless notice.nil? %>
 		<p id="notice" class="notice"> <%= notice %></p>

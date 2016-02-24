@@ -16,9 +16,7 @@
 //= require_tree .
 //= require bootstrap
 //= require moment
-//= require bootstrap-datetimepicker
 //= require bootstrap-datepicker
-//= require owl.carousel
 
 
 $(document).ready(function(){
