@@ -15,4 +15,7 @@ class PagesController < ApplicationController
 	def camp
 	end
 
+	def pillar
+	end
+
 end
