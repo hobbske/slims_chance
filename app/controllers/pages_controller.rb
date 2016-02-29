@@ -9,8 +9,6 @@ class PagesController < ApplicationController
 	def slim
 	end 
 
-	def contact
-	end
 
 	def camp
 	end

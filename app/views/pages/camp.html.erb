@@ -20,14 +20,14 @@
 <div class="align-center-slim special">
 
   <!-- Section #1 -->
-  <section id="scbc-one" data-speed="9" data-type="background" class="align-center-slim special">
+  <section id="baseball-one" data-speed="9" data-type="background" class="align-center-slim special">
     <div class="container">
       <div class="row-fluid">
         <div class="col-md-12 text-center">
           <div class="hero-unit">
             <h2 style="margin: 0px auto;">SC Baseball Camps</h2>
           </div>
-          <div class="well" style="margin: 2px;">
+          <div class="well">
             <%= image_tag "baseball_camp_team.jpg", size: "570x320", :class => "img-rounded img-responsive" %>
           </div>      
         </div>
@@ -44,8 +44,8 @@
             <br>
             <div class="row-fluid text-center">
 	            <div class="col-md-6 col-md-offset-3">
-					      <div class="row" align="center" style="margin: 10px;">
-					        <%= link_to 'Click Here To Register or Volunteer', events_path, class: 'btn btn-lg btn-brand' %> 
+					      <div class="row" align="center">
+					        <%= link_to 'Register or Volunteer', events_path, class: 'btn btn-lg btn-brand' %> 
 					      </div>
 					    </div>
 					  </div>
@@ -56,36 +56,27 @@
   </section>
 
   <!-- Section #2 -->
-  <section id="scbc-two" data-speed="4" data-type="background" class="align-center-slim special">
+  <section id="baseball-two" data-speed="4" data-type="background" class="align-center-slim special">
     <div class="container-fluid">
-      <div class="row row-centered">
-        <div class="col-md-4 well role-object-bb col-centered">
-          <%= image_tag "mentoring.jpg", size: "300x450", :class => "img-rounded" %>
-          <div class="role-object-title-bb" align="center">
-            <h3>Text</h3>
-          </div>
-          <!-- <p>Text Here.</p> -->
+      <div class="row">
+        <div class="col-md-4 well col-centered role-object-bb">
+          <%= image_tag "mentoring.jpg", :class => "img-rounded img-responsive" %>
+          <h3>Text</h3>
         </div>
-        <div class="col-md-4 well role-object-bb col-centered">
-          <%= image_tag "coaching.jpg", size: "300x450", :class => "img-rounded" %>
-          <div class="role-object-title-bb" align="center">
-            <h3>Text</h3>
-          </div>
-          <!-- <p>Text Here.</p> -->
+        <div class="col-md-4 well col-centered role-object-bb">
+          <%= image_tag "teaching.jpg", :class => "img-rounded img-responsive" %>         
+          <h3>Text</h3>
         </div>
-        <div class="col-md-4 well role-object-bb col-centered">
-          <%= image_tag "game_pic2.jpg", size: "300x450", :class => "img-rounded" %>
-          <div class="role-object-title-bb" align="center">
-            <h3>Text</h3>
-          </div>
-          <!-- <p>Text Here.</p> -->
+        <div class="col-md-4 well col-centered role-object-bb">
+          <%= image_tag "playing.jpg", :class => "img-rounded img-responsive" %>         
+          <h3>Text</h3>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Section #3 -->
-  <section id="scbc-three" data-speed="2" data-type="background" class="align-center-slim special">
+  <section id="baseball-three" data-speed="2" data-type="background" class="align-center-slim special">
     <div class="container">
       <div class="row-fluid">
       <hr>
@@ -97,38 +88,6 @@
           </h2>
         </div>
   
-        <hr>
-
-        <div class="col-md-12 hero-unit">
-          <h2>Camp Focus</h2>
-          <div class="media">
-            <a class="pull-left" href="#">
-              <%= image_tag "check.png", :class => "media object img-responsive" %>
-            </a>
-            <div class="media-body">
-                <h4 class="media-heading">Mentoring</h4>
-                How do you do it?
-            </div>
-          </div>
-          <div class="media">
-            <a class="pull-left" href="#">
-              <%= image_tag "check.png", :class => "media object img-responsive" %>
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Coaching</h4>
-              How do you do it? 
-            </div>
-          </div>
-          <div class="media">
-            <a class="pull-left" href="#">
-              <%= image_tag "check.png", :class => "media object img-responsive" %>
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Support</h4>
-              How do you do it? Give money to ...
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 

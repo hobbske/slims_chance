@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/about' => 'pages#about'
   get '/slim' => 'pages#slim'
-  get '/contact' => 'pages#contact'
   get '/camp' => 'pages#camp'
   get '/pillar' => 'pages#pillar'
 

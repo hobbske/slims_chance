@@ -9,45 +9,45 @@
   <section id="home-two" data-speed="4" data-type="background" class="align-center-slim border-home-top">
     <div class="container-fluid">
       <div class="row text-center center-vert three-pillars">
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="about-object">
-            <div class="col-sm-4">
-              <%= image_tag "teach_wht.png", :class => "" %>
+            <div class="col-md-4">
+              <%= image_tag "teach_wht.png", size: "120x100", :class => "" %>
             </div>
-            <div class="col-sm-8 center-vert">
-              <h4>
+            <div class="col-md-8 center-vert">
+              <h5>
                 Teach
-              </h4> 
+              </h5> 
               <button type="button" class="btn btn-brand">
                 Learn More
               </button>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="about-object">
-            <div class="col-sm-4">
-              <%= image_tag "mentor.gif", :class => "" %>
+            <div class="col-md-4">
+              <%= image_tag "mentor.gif", size: "100x100", :class => "" %>
             </div>
-            <div class="col-sm-8 center-vert">
-              <h4>
+            <div class="col-md-8 center-vert">
+              <h5>
                 Mentor
-              </h4> 
+              </h5> 
               <button type="button" class="btn btn-brand">
                 Learn More
               </button>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="about-object">
-            <div class="col-sm-4">
-              <%= image_tag "support.png", :class => "" %>
+            <div class="col-md-4">
+              <%= image_tag "support.png", size: "110x100", :class => "" %>
             </div>
-            <div class="col-sm-8 center-vert">
-              <h4>
+            <div class="col-md-8 center-vert">
+              <h5>
                 Support
-              </h4> 
+              </h5> 
               <button type="button" class="btn btn-brand">
                 Learn More
               </button>
@@ -57,9 +57,9 @@
       </div>
         <br>
       <div class="row text-center center-vert stats border-home-bottom">
-        <%= image_tag "number_of_kids.png", :class => "img-responsive" %>
+        <%= image_tag "number_of_kids.png" %>
         <h2>1-in-9 kids will lose a parent to sudden death or traumatic illness</h2>
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="stat-object">
             
             <h3> 3 times </h3>
@@ -70,7 +70,7 @@
          
           </div>
         </div>
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="stat-object">
             
             <h3> $245,340 </h3>
@@ -81,13 +81,12 @@
          
           </div>
         </div>
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="stat-object">
             
             <h3> 1.5 million </h3>
             <h6 style="color: black">
-              children surviving <br>
-              the loss of a parent, in the U.S. alone
+              children surviving the loss of a parent 
             </h6>
          
           </div>
@@ -104,30 +103,23 @@
   <section id="home-three" data-speed="5" data-type="background" class="align-center-slim special">
     <div class="container">
       <div class="row-fluid">
-        <div class="col-sm-12 hero-unit">
+        <div class="col-md-12 hero-unit">
           <h2>The Impact On Our Mission</h2>
           <p>How did the backstory drive your desire to start the foundation.</p>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
           <br>
           <p><%= button_to "Our Mission", about_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
         </div>
   
         <hr>
 
-        <div class="col-sm-12 hero-unit text-center">
+        <div class="col-md-12 hero-unit text-center">
           <h2><i>"Easing the burden, one child at a time."</i></h2>
         </div>
       </div>
     </div>
 
-    <script>
-      $(document).ready(function(){
-      
-        $window = $(window);
-
-      });
-
-    </script>
+    <script>$window = $(window);</script>
 
     <br>
     <br>
