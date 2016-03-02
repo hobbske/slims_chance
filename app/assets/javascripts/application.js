@@ -55,20 +55,13 @@ $(document).ready(function(){
 });
 
 
+// jQuery to fit each section within a viewport screen
+$(document).ready(function(){
 
-// Set home page carousel controls
-// $(document).ready(function(){
+  vpw = $(window).width();
+  vph = $(window).height();
 
-//   $('.carousel-control.left').click(function() {
-//     $('#carousel-example-generic').carousel('prev');
-//     });
-
-//   $('.carousel-control.right').click(function() {
-//     $('#carousel-example-generic').carousel('next');
-//   });
-
-// });
-
-
+  $('.full-page').height(vph);
   
+});
 
