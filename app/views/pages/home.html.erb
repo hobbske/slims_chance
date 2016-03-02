@@ -1,6 +1,15 @@
   <!-- Section #1 -->
   <section id="home-one" data-speed="9" data-type="background" class="align-center-slim special">
-    <div class="container-home">     
+    <div class="container-fluid container-home">
+      <div id="mobile-tagline" class="text-center">
+        <h2>
+          <strong>Slims Chance Foundation</strong>
+        </h2>
+        <br>
+        <h3> 
+          <i>"Working to ease the burden of losing a parent, one kid at a time."</i>
+        </h3>
+      </div>   
     </div>
   </section>
 
@@ -56,40 +65,43 @@
         </div>
       </div>
         <br>
-      <div class="row text-center center-vert stats border-home-bottom">
-        <%= image_tag "number_of_kids.png", :class => "img-responsive" %>
+      <div class="row center-vert stats border-home-bottom text-center">
+        <div class="text-center" style="margin-left: 40%; margin-right: 40%;">
+          <%= image_tag "number_of_kids.png", :class => "img-responsive" %>
+        </div>
         <h2>1-in-9 kids will lose a parent to sudden death or traumatic illness</h2>
+        
         <div class="col-sm-4 col-center">
           <div class="row" id="stat-object">
-            
+            <h6>they are...</h6>
             <h3> 3 times </h3>
             <h6 style="color: black">
               more likely to suffer from <br>
               <strong>Depression</strong> or <strong>PTSD</strong>
-            </h6> 
-         
+            </h6>         
           </div>
         </div>
+        
         <div class="col-sm-4 col-center">
           <div class="row" id="stat-object">
-            
+            <h6>it cost...</h6>
             <h3> $245,340 </h3>
             <h6 style="color: black">
-              cost of raising a child in 2013 <br>
+              to raise a child in 2013 <br>
               <font size="1">(according to U.S Dept of Agriculture in 2014)</font>
             </h6> 
          
           </div>
         </div>
+        
         <div class="col-sm-4 col-center">
           <div class="row" id="stat-object">
-            
+            <h6>there are...</h6>
             <h3> 1.5 million </h3>
             <h6 style="color: black">
               children surviving <br>
               the loss of a parent, in the U.S. alone
-            </h6>
-         
+            </h6>         
           </div>
         </div>
 
@@ -107,15 +119,15 @@
         <div class="col-sm-12 hero-unit">
           <h2>The Impact On Our Mission</h2>
           <p>How did the backstory drive your desire to start the foundation.</p>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
           <br>
           <p><%= button_to "Our Mission", about_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
         </div>
   
-        <hr>
+        <hr id="mobile-exclude">
 
-        <div class="col-sm-12 hero-unit text-center">
-          <h2><i>"Easing the burden, one child at a time."</i></h2>
+        <div id="mobile-exclude" class="col-sm-12 hero-unit text-center">
+          <h2><i>"Working to ease the burden of losing a parent, one kid at a time."</i></h2>
         </div>
       </div>
     </div>

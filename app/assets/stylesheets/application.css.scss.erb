@@ -90,11 +90,10 @@ ul#sub-link li a:hover {
 
 .brand-logo {
   color: #581c08;
-  font-size: 1.250em;
+  font-size: 0.95em;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 4% 0%;
-  font-size: inherit;
 }
 
 .brand-logo:hover {
@@ -167,6 +166,11 @@ ul#sub-link li a:hover {
   border: none;
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .row-fluid {
     word-wrap: break-word;
 }
@@ -237,7 +241,6 @@ h6 {
 
 #home-one { 
   background: url(<%= asset_path('cover_photo_lg.jpg') %>) 50% 0 fixed;
-  background-image: image-url("cover_photo_lg.jpg") 50% 0 fixed;
   background-repeat: no-repeat;
   background-color: #581c08;
   height: inherit;  
@@ -247,15 +250,14 @@ h6 {
 
 #home-two {
   background: url(<%= asset_path('about.png') %>) 100% 100% fixed;
-  background-image: image-url("about.png") 50% 0 fixed; 
   height: 50%;  
   margin: 0 auto; 
   position: relative;
-  padding: 2% 0;
+  padding: 0 0;
 }
 
 #home-three { 
-  background: url(<%= asset_path('cover_photo_kid_bw2.jpg') %>);
+  background: url(<%= asset_path('cover_photo_kid_bw.jpg') %>);
   background-color: #232323;
   background-size: stretch;
   background-repeat: no-repeat;
@@ -267,23 +269,28 @@ h6 {
 }
 
 #about-object {
-  margin: auto;
+  margin: 10% auto;
   color: rgba(255,255,255,1);
   width: 70%;
-  background-color: rgba(255,248,167,0);
-  border-radius: 15px;
-  padding: 10px;
+  background-color: rgba(255,255,255,.1);
+  border-radius: 10px;
+  padding: 5%;
   font-size: 22px;
   letter-spacing: 2.0px;
 
 }
 
+#mobile-tagline {
+    display: none;
+  }
+
 #stat-object {
-  margin: auto;
+  margin: 10% auto;
   color: #DD4814;
   width: 90%;
-  background-color: rgba(255,255,255,0);
-  padding: 10px;
+  background-color: rgba(221,72,20,.1);  
+  border-radius: 10px;
+  padding: 2%;
   font-size: 22px;
   letter-spacing: 2.0px;
 
@@ -307,20 +314,17 @@ h6 {
 }
 
 .hero-unit {
-  background-color: rgba(255,255,255,0);
   color: rgba(255,255,255,1);
   padding: 10px;
   margin: 10px 0;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-.center-vert {
-  margin: 1% auto;
-}
 
 .image-circle {
   border-radius: 100%;
 }
+
+
 
 .stats {
   background-color: #ffffff;
@@ -345,7 +349,7 @@ h6 {
 // ***** WHO WE ARE **********************
 
 #mission-one { 
-  background: url(<%= asset_path('about.png') %>) 50% 0 fixed;
+  background-image: url(<%= asset_path('about.png') %>) 50% 0 fixed;
   background-color: #232323;
   height: auto;  
   margin: 0 auto; 
@@ -356,7 +360,7 @@ h6 {
 }
 
 #mission-two { 
-  background: url(<%= asset_path('slims_chance_logo1.png') %>) 50% 0 fixed;
+  background-image: url(<%= asset_path('slims_chance_logo1.png') %>) 50% 0 fixed;
   background-repeat: no-repeat;
   background-color: #581c08;
   height: 40%;  
@@ -365,7 +369,7 @@ h6 {
 }
 
 #mission-three { 
-  background: url(<%= asset_path('about.png') %>) 50% 0 fixed;
+  background-image: url(<%= asset_path('about.png') %>) 50% 0 fixed;
   background-color: #232323;
   height: 500px;  
   margin: 0 auto; 
@@ -484,6 +488,45 @@ h6 {
 
   // *****  HOME ***************************
 
+  #home-one { 
+    background: url(<%= asset_path('cover_photo_sm.jpeg') %>) 60% 0 fixed;
+    background-repeat: no-repeat;
+    background-color: #581c08;
+    height: 100%;  
+    margin: auto;
+    padding-bottom: 15%;
+  }
+
+  #home-two {
+    background: url(<%= asset_path('about.png') %>) 100% 100% fixed;
+    height: 50%;  
+    margin: 0 auto; 
+    position: relative;
+    padding: 0 0;
+  }
+
+  #home-three { 
+    background: url(<%= asset_path('cover_photo_kid_bw_sm.jpg') %>);
+    background-color: #232323;
+    background-size: stretch;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    padding: 5% 0;
+    color: #fff;
+  }
+
+  #mobile-exclude {
+    display:none;
+  }
+
+  #mobile-tagline {
+    display: block;
+    padding: 45% 5%;
+    background-color: rgba(255,255,255,.5);
+    color: rgba(221,72,20,1);
+  }
 
 
   // ***** WHO WE ARE **********************
