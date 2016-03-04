@@ -1,15 +1,68 @@
   <!-- Section #1 -->
-  <section id="home-one" data-speed="9" data-type="background" class="align-center-slim special">
+  <section id="home-one" data-speed="9" data-type="background" class="align-center-slim full-page">
     <div class="container-fluid container-home">
-      <div id="mobile-tagline" class="text-center">
-        <h2>
-          <strong>Slims Chance Foundation</strong>
-        </h2>
-        <br>
-        <h3> 
-          <i>"Working to ease the burden of losing a parent, one kid at a time."</i>
-        </h3>
-      </div>   
+      <div class="row">
+        <div id="mobile-tagline" class="text-center">
+          <h2>
+            <strong>Slims Chance Foundation</strong>
+          </h2>
+          <br>
+          <h3> 
+            <i>"Working to ease the burden of losing a parent, one kid at a time."</i>
+          </h3>
+        </div>
+      </div>
+      
+      <div id="home-oneb" data-speed="4" data-type="background" class="align-center-slim border-home-top">  
+        <div class="row text-center center-vert three-pillars">
+          <div class="col-md-4 col-center">
+            <div class="row" id="about-object">
+              <div class="col-md-4">
+                <%= image_tag "teach_wht.png", :class => "img-responsive" %>
+              </div>
+              <div class="col-md-8 center-vert">
+                <h4>
+                  Teach
+                </h4> 
+                <button type="button" class="btn btn-brand">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-center">
+            <div class="row" id="about-object">
+              <div class="col-md-4">
+                <%= image_tag "mentor.gif", :class => "img-responsive" %>
+              </div>
+              <div class="col-md-8 center-vert">
+                <h4>
+                  Mentor
+                </h4> 
+                <button type="button" class="btn btn-brand">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-center">
+            <div class="row" id="about-object">
+              <div class="col-md-4">
+                <%= image_tag "support.png", :class => "img-responsive" %>
+              </div>
+              <div class="col-md-8 center-vert">
+                <h4>
+                  Support
+                </h4> 
+                <button type="button" class="btn btn-brand">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+
     </div>
   </section>
 
@@ -17,61 +70,14 @@
   <!-- Section #2 -->
   <section id="home-two" data-speed="4" data-type="background" class="align-center-slim border-home-top">
     <div class="container-fluid">
-      <div class="row text-center center-vert three-pillars">
-        <div class="col-sm-4 col-center">
-          <div class="row" id="about-object">
-            <div class="col-sm-4">
-              <%= image_tag "teach_wht.png", :class => "" %>
-            </div>
-            <div class="col-sm-8 center-vert">
-              <h4>
-                Teach
-              </h4> 
-              <button type="button" class="btn btn-brand">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-center">
-          <div class="row" id="about-object">
-            <div class="col-sm-4">
-              <%= image_tag "mentor.gif", :class => "" %>
-            </div>
-            <div class="col-sm-8 center-vert">
-              <h4>
-                Mentor
-              </h4> 
-              <button type="button" class="btn btn-brand">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-center">
-          <div class="row" id="about-object">
-            <div class="col-sm-4">
-              <%= image_tag "support.png", :class => "" %>
-            </div>
-            <div class="col-sm-8 center-vert">
-              <h4>
-                Support
-              </h4> 
-              <button type="button" class="btn btn-brand">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-        <br>
+
       <div class="row center-vert stats border-home-bottom text-center">
-        <div class="text-center" style="margin-left: 30%; margin-right: 30%;">
-          <%= image_tag "number_of_kids.png", :class => "" %>
+        <div id="num-kids-mobile" class="text-center">
+          <%= image_tag "number_of_kids.png", :class => "img-responsive" %>
         </div>
         <h2>1-in-9 kids will lose a parent to sudden death or traumatic illness</h2>
         
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="stat-object">
             <h6>they are...</h6>
             <h3> 3 times </h3>
@@ -82,7 +88,7 @@
           </div>
         </div>
         
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="stat-object">
             <h6>it cost...</h6>
             <h3> $245,340 </h3>
@@ -94,7 +100,7 @@
           </div>
         </div>
         
-        <div class="col-sm-4 col-center">
+        <div class="col-md-4 col-center">
           <div class="row" id="stat-object">
             <h6>there are...</h6>
             <h3> 1.5 million </h3>
@@ -109,14 +115,11 @@
     </div>
   </section>
 
-
-
-
   <!-- Section #3 -->
-  <section id="home-three" data-speed="5" data-type="background" class="align-center-slim">
-    <div class="container">
+  <section id="home-three" data-speed="5" data-type="background" class="align-center-slim full-page">
+    <div class="container-fluid">
       <div class="row-fluid">
-        <div class="col-sm-12 hero-unit">
+        <div class="col-md-8 col-md-offset-2 hero-unit">
           <h2>The Impact On Our Mission</h2>
           <p>How did the backstory drive your desire to start the foundation.</p>
           <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
@@ -126,7 +129,7 @@
   
         <hr id="mobile-exclude">
 
-        <div id="mobile-exclude" class="col-sm-12 hero-unit text-center">
+        <div id="mobile-exclude" class="col-md-12 hero-unit text-center">
           <h2><i>"Working to ease the burden of losing a parent, one kid at a time."</i></h2>
         </div>
       </div>
@@ -137,6 +140,16 @@
       
         $window = $(window);
 
+      });
+
+      // jQuery to fit each section within a viewport screen
+      $(document).ready(function(){
+
+        vpw = $(window).width();
+        vph = $(window).height();
+
+        $('.full-page').height(vph);
+        
       });
 
     </script>

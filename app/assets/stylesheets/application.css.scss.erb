@@ -115,6 +115,7 @@ ul#sub-link li a:hover {
   background-color: rgba(221,72,20,1);
   border-color: rgba(132,43,12,1);
   letter-spacing: 1.5px;
+  margin: auto;
 }
 
 .btn-brand:hover {
@@ -131,9 +132,13 @@ ul#sub-link li a:hover {
 }
 
 .container-fluid {
-  margin: 0;
+
   padding: 0;
-  height: 100%
+
+}
+
+img-responsive {
+  margin: 20% auto;
 }
 
 .form-outline {
@@ -242,42 +247,51 @@ h6 {
 #home-one { 
   background: url(<%= asset_path('cover_photo_lg.jpg') %>) 50% 0 fixed;
   background-repeat: no-repeat;
-  background-color: #581c08;
-  height: inherit;  
-  margin: auto;
-  padding-bottom: 10px;
+  background-color: #DD4814;
+ 
 }
 
-#home-two {
-  background: url(<%= asset_path('about.png') %>) 100% 100% fixed;
-  height: 50%;  
+#home-oneb {
+  background: url(<%= asset_path('about.png') %>) 50% 0 fixed;
+  height: 30%;  
   margin: 0 auto; 
-  position: relative;
-  padding: 0 0;
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+}
+
+#home-two { 
+  background-repeat: no-repeat;
+  background-color: #DD4814; 
+  height: 40%;
 }
 
 #home-three { 
-  background: url(<%= asset_path('cover_photo_kid_bw.jpg') %>);
+  background: url(<%= asset_path('cover_photo_kid_bw.jpg') %>) 50% 0;
   background-color: #232323;
-  background-size: stretch;
   background-repeat: no-repeat;
-  margin: 0 auto;
-  height: 100%;
+  padding-top: 5%;
+  margin: auto 0;
   width: 100%;
-  padding: 5% 0;
-  color: #fff;
+  color: #DD4814;
+  height: 100%;
 }
 
 #about-object {
-  margin: 10% auto;
+  margin: 15% auto;
   color: rgba(255,255,255,1);
-  width: 70%;
+  width: 80%;
   background-color: rgba(255,255,255,.1);
   border-radius: 10px;
   padding: 5%;
   font-size: 22px;
   letter-spacing: 2.0px;
 
+}
+
+#num-kids-mobile {
+  margin: 2% 35%;
+  text-align: center;
 }
 
 #mobile-tagline {
@@ -288,13 +302,15 @@ h6 {
   margin: 10% auto;
   color: #DD4814;
   width: 90%;
-  background-color: rgba(221,72,20,.1);  
+  background-color: rgba(128,128,128,.3);  
   border-radius: 10px;
   padding: 2%;
   font-size: 22px;
   letter-spacing: 2.0px;
 
 }
+
+
 
 .border-home-bottom {
   border-bottom-style: solid;
@@ -315,8 +331,14 @@ h6 {
 
 .hero-unit {
   color: rgba(255,255,255,1);
-  padding: 10px;
-  margin: 10px 0;
+  padding: 10px 10%;
+}
+
+.focus {
+  color: white;
+  background-color: rgba(255,255,255,.2);
+  padding: 5% 10%;
+  border-radius: 10px;
 }
 
 
@@ -341,17 +363,15 @@ h6 {
   padding: 2%;
 }
 
-.three-pillars {
-  padding: 10px 0;
-}
 
 
 // ***** WHO WE ARE **********************
 
 #mission-one { 
-  background-image: url(<%= asset_path('about.png') %>) 50% 0 fixed;
-  background-color: #232323;
-  height: auto;  
+  background: url(<%= asset_path('about.png') %>) 50% 0 fixed;
+  background-color: #DD4814;
+  height: auto;
+  line-height: 1.5;  
   margin: 0 auto; 
   width: 100%; 
   position: relative; 
@@ -360,7 +380,7 @@ h6 {
 }
 
 #mission-two { 
-  background-image: url(<%= asset_path('slims_chance_logo1.png') %>) 50% 0 fixed;
+  background: url(<%= asset_path('slims_chance_logo1.png') %>) 50% 0 fixed;
   background-repeat: no-repeat;
   background-color: #581c08;
   height: 40%;  
@@ -369,8 +389,8 @@ h6 {
 }
 
 #mission-three { 
-  background-image: url(<%= asset_path('about.png') %>) 50% 0 fixed;
-  background-color: #232323;
+  background: url(<%= asset_path('about.png') %>) 50% 0 fixed;
+  background-color: #DD4814;
   height: 500px;  
   margin: 0 auto; 
   width: 100%; 
@@ -437,9 +457,10 @@ h6 {
   background: url(<%= asset_path('baseball_camp_team.jpg') %>) 50% 0 fixed;
   background-repeat: no-repeat;
   background-color: #581c08;
-  height: 40%;  
-  margin: auto;
-  padding-bottom: 10px;
+  height: 80%;  
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative;
 }
 
 #baseball-three { 
@@ -461,6 +482,10 @@ h6 {
   border-color: none;
   border-radius: 10px;
   background: url(<%= asset_path('about.png') %>);
+}
+
+.tagline {
+  color: white;
 }
 
 
@@ -485,11 +510,11 @@ h6 {
   // ***** FONTS ***************************
 
   h1 {
-  font-size: 36px;  // 3.75em - 2.5vw
+  font-size: 28px;  // 3.75em - 2.5vw
   }
 
   h2 {
-    font-size: 24px;  // 3.00em - 2.08vw
+    font-size: 20px;  // 3.00em - 2.08vw
   }
 
   h3 {
@@ -548,6 +573,11 @@ h6 {
     padding: 50% 5%;
     background-color: rgba(255,255,255,.5);
     color: rgba(221,72,20,1);
+  }
+
+  img#num-kids-mobile {
+    width: 80%;
+    margin: 1% auto;
   }
 
 

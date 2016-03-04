@@ -55,13 +55,5 @@ $(document).ready(function(){
 });
 
 
-// jQuery to fit each section within a viewport screen
-$(document).ready(function(){
 
-  vpw = $(window).width();
-  vph = $(window).height();
-
-  $('.full-page').height(vph);
-  
-});
 
