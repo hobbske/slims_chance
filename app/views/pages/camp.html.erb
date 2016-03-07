@@ -6,9 +6,9 @@
       <div class="row-fluid">
         <div class="col-md-12 text-center">
           <div class="hero-unit">
-            <h2 style="margin: 0px auto;">SC Baseball Camps</h2>
+            <h2 style=>SC Baseball Camps</h2>
           </div>
-          <div class="well">
+          <div class="well slim-borders">
             <%= image_tag "baseball_camp_team.jpg", size: "500x300", :class => "img-rounded img-responsive" %>
           </div>      
         </div>
@@ -26,7 +26,8 @@
             <div class="row-fluid text-center">
 	            <div class="col-md-6 col-md-offset-3">
 					      <div class="row" align="center">
-					        <%= link_to 'Register or Volunteer', events_path, class: 'btn btn-lg btn-brand' %> 
+					        <%= link_to 'Register', events_path, class: 'btn btn-lg btn-action' %> 
+                  <%= link_to 'Sponsor', events_path, class: 'btn btn-lg btn-action' %>
 					      </div>
 					    </div>
 					  </div>
@@ -68,7 +69,7 @@
 
         <div class="item">
           <div class="background">
-            <%= image_tag 'carousel_coaching.jpg', :alternate => "Slide 1", :class => "image" %>
+            <%= image_tag 'carousel_playing.jpg', :alternate => "Slide 1", :class => "image" %>
           </div>
           <div class="carousel-caption align-middle">            
             <div class="tagline">
@@ -117,10 +118,10 @@
       <div class="row-fluid">
       <hr>
         <div class="col-md-12 hero-unit">
-          <h2 class="text-center">View Our Photo Gallery On <i class="icon-facebook icon-white icon-large"></i>Facebook</h2>
-          <br>
+          <!-- <h2 class="text-center">View Our Photo Gallery On <i class="icon-facebook icon-white icon-large"></i>Facebook</h2>
+          <br> -->
           <h2>
-          	<%= link_to "Click To View", "https://www.facebook.com/SlimsChance/photos_stream?tab=photos_stream", align: 'center', target: 'blank', class: 'btn btn-lg btn-brand btn-block' %>
+          	<%= link_to "View Our Photo Gallery on Facebook", "https://www.facebook.com/SlimsChance/photos_stream?tab=photos_stream", align: 'center', target: 'blank', class: 'btn btn-lg btn-facebook btn-block' %>
           </h2>
         </div>
   
@@ -136,6 +137,12 @@
         vph = $(window).height();
 
         $('.full-page').height(vph);
+
+
+        // Set homepage carousel slide interval
+        $('.carousel').carousel({
+           interval: 5000
+        });
         
       });
 

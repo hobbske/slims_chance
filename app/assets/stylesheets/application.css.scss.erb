@@ -78,8 +78,8 @@ ul#sub-link li a:hover {
 }
 
 .table-hover tr:hover td,.table-hover tr:hover {
-  color:#DD4814;
-  background-color: rgba(221,72,20,.3);
+  color: #581c08;
+  background-color: rgba(128,128,128,.2);
 }
 
 .brand-text {
@@ -110,18 +110,48 @@ ul#sub-link li a:hover {
   letter-spacing: 2px;
 }
 
-.btn-brand {
+.btn-action {
   color: #fff;
   background-color: rgba(221,72,20,1);
   border-color: rgba(132,43,12,1);
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  margin: auto;
+}
+
+.btn-action:hover {
+  color: #fff;
+  background-color: rgba(132,43,12,1);
+  border-color: rgba(221,72,20,1);
+}
+
+.btn-brand {
+  color: #fff;
+  background-color: rgba(132,43,12,1);
+  border-color: #fff;
+  border-radius: 10px;
   letter-spacing: 1.5px;
   margin: auto;
 }
 
 .btn-brand:hover {
+  color: rgba(132,43,12,1);
+  background-color: #fff;
+  border-color: rgba(132,43,12,1);
+}
+
+.btn-facebook {
   color: #fff;
-  background-color: rgba(132,43,12,1);
-  border-color: rgba(221,72,20,1);
+  background-color: rgba(59,89,152,1);
+  border-color: rgba(59,89,152,1);
+  letter-spacing: 1.5px;
+  margin: auto;
+}
+
+.btn-facebook:hover {
+  color: rgba(59,89,152,1);
+  background-color: #fff;
+  border-color: rgba(59,89,152,1);
 }
 
 .col-centered {
@@ -182,7 +212,7 @@ img-responsive {
 }
 
 .thead-brand { 
-  background-color: rgba(221,72,20,1);
+  background-color: #581c08;
   background-size: 100% 100%;
 
   color: rgba(255,255,255,1);
@@ -262,6 +292,7 @@ h6 {
 }
 
 #home-two { 
+  background: url(<%= asset_path('intro.png') %>) 50% 0 fixed;
   background-repeat: no-repeat;
   background-color: #DD4814; 
   height: 40%;
@@ -418,7 +449,7 @@ h6 {
 #section-two {
   background: url(<%= asset_path('intro.png') %>) 100% 100% fixed;
   background-repeat: no-repeat;
-  background-color: rgba(221,72,20,1);
+  background-color: rgba(128,128,128,1);
   margin: 0 auto; 
   width: 100%; 
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
@@ -456,11 +487,19 @@ h6 {
   height: auto;
   border-color: none;
   border-radius: 10px;
-  background: url(<%= asset_path('about.png') %>);
+  background-color: #581c08;
 }
 
 .role-object-title {
   margin: 5px 0;
+}
+
+.slim-borders {
+
+  margin: 2px; 
+  border-color: #581c08; 
+  border-width: 3px;
+  border-radius: 10px;
 }
 
 
