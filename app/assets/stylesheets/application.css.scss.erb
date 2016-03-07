@@ -402,6 +402,65 @@ h6 {
 
 // ***** ABOUT SLIM **********************
 
+#section-one { 
+  background: url(<%= asset_path('about.png') %>) 50% 0 fixed;
+  background-image: image-url("about.png") 50% 0 fixed;
+  background-color: #232323;
+  height: auto;  
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding-bottom: 10px;
+}
+
+#section-two {
+  background: url(<%= asset_path('intro.png') %>) 100% 100% fixed;
+  background-repeat: no-repeat;
+  background-color: rgba(221,72,20,1);
+  margin: 0 auto; 
+  width: 100%; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+#section-three { 
+  background: url(<%= asset_path('about.png') %>) 50% 0 fixed;
+  background-color: #232323;
+  height: auto;
+  margin: 0 auto; 
+  width: 100%; 
+  position: relative; 
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  padding: 100px 0;
+  color: #fff;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: -4px;
+}
+
+.media-object { 
+  width: 64px; 
+  height: 64px; 
+  padding-bottom: 30px;
+}
+
+.role-object {
+  display: inline-block;
+  color: white;
+  width: 21%;
+  height: auto;
+  border-color: none;
+  border-radius: 10px;
+  background: url(<%= asset_path('about.png') %>);
+}
+
+.role-object-title {
+  margin: 5px 0;
+}
 
 
 

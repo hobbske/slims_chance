@@ -18,7 +18,7 @@
 </div>	 -->
 
   <!-- Section #1 -->
-  <section id="section-one" data-speed="9" data-type="background" class="align-center-slim special">
+  <section id="section-one" data-speed="9" data-type="background" class="align-center-slim full-page">
     <div class="container">
       <div class="row-fluid">
         <div class="col-md-12 text-center">
@@ -33,12 +33,12 @@
         <div class="row-fluid text-center">
           <div class="col-md-12 hero-unit">
             <!-- <h2>Background</h2> -->
-            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2>
             <br>
           </div>
         </div>
@@ -47,32 +47,32 @@
   </section>
 
   <!-- Section #2 -->
-  <section id="section-two" data-speed="4" data-type="background" class="align-center-slim special">
+  <section id="section-two" data-speed="4" data-type="background" class="align-center-slim">
     <div class="container-fluid">
       <div class="row row-centered">
         <div class="col-md-3 well role-object col-centered">
-          <%= image_tag "father_portrait.png", size: "170x190", :class => "img-rounded" %>
+          <%= image_tag "father_portrait.png", size: "230x290", :class => "img-rounded" %>
           <div class="role-object-title" align="center">
             <h3>Father</h3>
           </div>
           <!-- <p>Text Here.</p> -->
         </div>
         <div class="col-md-3 well role-object col-centered">
-          <%= image_tag "son.png", size: "170x190", :class => "img-rounded" %>
+          <%= image_tag "son.png", size: "230x290", :class => "img-rounded" %>
           <div class="role-object-title" align="center">
             <h3>Son</h3>
           </div>
           <!-- <p>Text Here.</p> -->
         </div>
         <div class="col-md-3 well role-object col-centered">
-          <%= image_tag "brother.png", size: "170x190", :class => "img-rounded" %>
+          <%= image_tag "brother.png", size: "230x290", :class => "img-rounded" %>
           <div class="role-object-title" align="center">
             <h3>Brother</h3>
           </div>
           <!-- <p>Text Here.</p> -->
         </div>
         <div class="col-md-3 well role-object col-centered">
-          <%= image_tag "uncle.png", size: "170x190", :class => "img-rounded" %>
+          <%= image_tag "uncle.png", size: "230x290", :class => "img-rounded" %>
           <div class="role-object-title" align="center">
             <h3>Uncle</h3>
           </div>
@@ -83,14 +83,14 @@
   </section>
 
   <!-- Section #3 -->
-  <section id="section-three" data-speed="2" data-type="background" class="align-center-slim special">
+  <section id="section-three" data-speed="2" data-type="background" class="align-center-slim">
     <div class="container">
       <div class="row-fluid">
       <hr>
         <div class="col-md-12 hero-unit">
-          <h2>The Impact On Our Mission</h2>
-          <p>How did the backstory drive your desire to start the foundation.</p>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+          <h1>The Impact On Our Mission</h1>
+          <h3>How did the backstory drive your desire to start the foundation.</h3>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
           <br>
           <p><%= button_to "Our Mission", about_path, method: :get, align: 'center', class: 'btn btn-primary btn-lg' %></p>
         </div>
@@ -130,6 +130,20 @@
       </div>
     </div>
 
-    <script>$window = $(window);</script>
+    <script>
+
+      $window = $(window);
+
+      // jQuery to fit each section within a viewport screen
+      $(document).ready(function(){
+
+        vpw = $(window).width();
+        vph = $(window).height();
+
+        $('.full-page').height(vph);
+        
+      });
+
+    </script>
 
   </section>
